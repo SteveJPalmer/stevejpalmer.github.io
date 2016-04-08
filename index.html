@@ -1,7 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<body>
-<h1>AudioOrange.com</h1>
-<p>initial hosting setup in progress..</p>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="stylesheet" href="testDNSConfig/normalize.css">
+
+		<style>
+    header {
+				position: fixed;
+				top: 0px;
+				height: 100px;
+				width: 100%;
+				background-color: white;
+				opacity: 0.9 ;
+        transition: top 0.3s ease-in-out;
+			}
+
+    body {
+        padding-top: 100px;  /* same as menu height */
+    }
+
+    li {
+      display: inline;
+      color: Orange;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      height: 100px;
+    }
+
+    /* class to hide header|menu */
+    .nav-up {
+      top: -100px; /* same as menu height tip: use variables scss/less*/
+    }
+	</style>
+
+	</head>
+
+	<body>
+  <header class="nav-down">
+    <!-- Navigation section -->
+    <nav class="menu">
+      <ul>
+        <li>
+          <img src="testDNSConfig/ao-logo-400.png " alt=“AO” height="80px" width="80px" />
+        </li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>Media</li>
+        <li>Contact</li>
+        <li>GitHub</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <!-- Add your site or application content here -->
+      <img src="testDNSConfig/Meribel_01.jpg" alt="">
+      <img src="testDNSConfig/Meribel_02.jpg" alt="">
+      <img src="testDNSConfig/Meribel_03.jpg" alt="">
+    </section>
+  </main>
+  <footer>
+    my footer
+    <div>
+      <li>about</li>
+      <li>Contact</li>
+      <li>GutHub</li>
+      <li>LinkedIn</li>
+    </div>
+
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="testDNSConfig/jquery-1.11.3.min.js"><\/script>')</script>
+
+  <script>
+    $(function () {
+      // scroll control variables
+      var lastScrollTop = 0;
+      var delta = 50;      //Note: movement tolerance (aka mouse sensitivity)
+      var navbarHeight = $('header').outerHeight();  //dynamically find menu height
+
+      /* call via named fn */
+      //$(window).scroll(hasScrolled);
+
+      /* or call via optimized technique.. */
+      var didScroll;
+
+      $(window).scroll(function (event) {
+        didScroll = true;
+      });
+
+      setInterval(function () {
+        if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+        }
+      }, 250);    //Note: can slow it down to check functionality
+
+      function hasScrolled() {
+        console.log('>>fn hasScrolled start');
+        var st = $(this).scrollTop();
+        console.log('....scrollTop (st):' + st);
+        console.log('....lastScrollTop:' + lastScrollTop);
+        console.log('....window height' + $(window).height());
+        console.log('....document height' + $(document).height());
+
+        // stop progress if not scrolled more than delta
+        if (Math.abs(lastScrollTop - st) <= delta) {
+          lastScrollTop = st;  //Note: my alternative comment below
+          return;
+        }
+        /* my Alternative - more speed of scroll, not total px amount scrolled
+         basic always fires once threshold exceeded, my Alternative is relative to last position                       -- if rest last top then scroll has to be rapid (not slow), to exceed threshold
+         */
+
+        // if scrolled down & past navbar, add class .nav-up.
+        // (necessary so never see what is "behind" the navbar)
+        if (st > lastScrollTop && st > (navbarHeight + 200)) {
+          // Scroll Down
+          $('header').removeClass('nav-down').addClass('nav-up');
+        } else {
+          // Scroll Up
+          // If did not scroll past the document (possible on mac)...!
+          if (st + $(window).height() < $(document).height()) {
+            $('header').removeClass('nav-up').addClass('nav-down');
+          }
+        }
+        lastScrollTop = st;
+      }
+
+    });
+
+  </script>
+
+  </body>
 </html>
