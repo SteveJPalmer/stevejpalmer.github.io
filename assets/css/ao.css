@@ -39,7 +39,7 @@ html, body {
   height: 60px;
   width: 100%;
   background-color: #303538;  /* black white antiquewhite */
-  transition: top 0.8s ease-in-out;
+  transition: top 0.8s ease;
 }
 
 .ao-footer {
