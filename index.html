@@ -7,73 +7,58 @@
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- Place favicon.ico in the root directory -->
-		<link rel="stylesheet" href="testDNSConfig/normalize.css">
-
-		<style>
-    header {
-				position: fixed;
-				top: 0px;
-				height: 100px;
-				width: 100%;
-				background-color: white;
-				opacity: 0.9 ;
-        transition: top 0.3s ease-in-out;
-			}
-
-    body {
-        padding-top: 100px;  /* same as menu height */
-    }
-
-    li {
-      display: inline;
-      color: Orange;
-    }
-
-    footer {
-      background-color: black;
-      color: white;
-      height: 100px;
-    }
-
-    /* class to hide header|menu */
-    .nav-up {
-      top: -100px; /* same as menu height tip: use variables scss/less*/
-    }
-	</style>
+		<link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/ao.css">
 
 	</head>
 
 	<body>
-  <header class="nav-down">
+
+    <header class="ao-header nav-down">
     <!-- Navigation section -->
-    <nav class="menu">
+      <img id="logo" src="testDNSConfig/ao-logo-400.png" alt=“AO” height="40px" width="40px" />
+      <!-- replace with image -->
+      <span style="color:#4BACC6">AudioOrange</span>
+      <!--<nav class="menu">-->
       <ul>
-        <li>
-          <img src="testDNSConfig/ao-logo-400.png " alt=“AO” height="80px" width="80px" />
-        </li>
         <li>Services</li>
         <li>Projects</li>
         <li>Media</li>
         <li>Contact</li>
         <li>GitHub</li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <!-- Add your site or application content here -->
-      <img src="testDNSConfig/Meribel_01.jpg" alt="">
-      <img src="testDNSConfig/Meribel_02.jpg" alt="">
-      <img src="testDNSConfig/Meribel_03.jpg" alt="">
-    </section>
-  </main>
-  <footer>
+    <!--</nav>-->
+    </header>
+
+    <div class="ao-topper">
+
+    </div>
+
+    <div class="ao-info">
+      info area
+    </div>
+
+    <div class="ao-tail">
+      tail area
+    </div>
+
+    <!--<main>-->
+    <!--<section>-->
+      <!--&lt;!&ndash; Add your site or application content here &ndash;&gt;-->
+      <!--<img src="testDNSConfig/Meribel_01.jpg" alt="">-->
+      <!--<img src="testDNSConfig/Meribel_02.jpg" alt="">-->
+      <!--<img src="testDNSConfig/Meribel_03.jpg" alt="">-->
+    <!--</section>-->
+  <!--</main>-->
+  <footer class="ao-footer">
     my footer
     <div>
-      <li>about</li>
-      <li>Contact</li>
-      <li>GutHub</li>
-      <li>LinkedIn</li>
+      <ul>
+        <li>about</li>
+        <li>Contact</li>
+        <li>GutHub</li>
+        <li>LinkedIn</li>
+      </ul>
     </div>
 
   </footer>
@@ -91,7 +76,7 @@
       /* call via named fn */
       //$(window).scroll(hasScrolled);
 
-      /* or call via optimized technique.. */
+      /* optimized scroll technique.. throttling */
       var didScroll;
 
       $(window).scroll(function (event) {
@@ -103,7 +88,7 @@
           hasScrolled();
           didScroll = false;
         }
-      }, 250);    //Note: can slow it down to check functionality
+      }, 250);    //Note: slow it right down to check throttling
 
       function hasScrolled() {
         console.log('>>fn hasScrolled start');

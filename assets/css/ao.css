@@ -1,0 +1,69 @@
+
+/* main content areas */
+/*	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #303538 #929292	#A7A7A7 */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.ao-topper {
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  background-color: #F79646;
+}
+
+.ao-info {
+  height: 100%;
+  width: auto;
+  max-width: 1024px;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  background-color: #fff;
+}
+
+.ao-tail {
+  height: 100px;
+  width: 100%;
+  background-color: #F79646;
+}
+
+/* ao header - slide on scroll */
+.ao-header {
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100%;
+  background-color: #303538;  /* black white antiquewhite */
+  transition: top 0.8s ease-in-out;
+}
+
+.ao-footer {
+  height: 60px;
+  width: 100%;
+  background-color: #303538;  /* black white antiquewhite */
+}
+
+.ao-header li:hover, .ao-footer li:hover {
+  background-color: black;  /* black white antiquewhite */
+  transition: background-color 0.2s ease;
+}
+
+ul, li {
+  display: inline;
+  color: Orange;
+  transition: background-color 0.8s ease;
+}
+
+/* class to hide header|menu */
+.nav-up {
+  top: -60px; /* same as menu height tip: use variables scss/less*/
+}
+
+.logo {
+  float: left;
+}
