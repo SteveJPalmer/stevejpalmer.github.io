@@ -1,25 +1,30 @@
 <!doctype html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<title>AudioOrange</title>
 		<meta name="description" content="AudioOrange Website">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">-->
     <link rel="stylesheet" href="assets/css/ao.css">
 
-    <!-- HTML5 shim & Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- HTML5shiv & Respond.js polyfills - HTML5 elements & media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- jQuery with fallback (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery with fallback (necessary for Bootstrap js plugins) -->
     <script src="https://code.jquery.com/jquery-1.12.3.min.js"
             integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
             crossorigin="anonymous"></script>
@@ -27,14 +32,15 @@
 
     <!-- bootstrap core -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
   </head>
 
   <body>
-
+  
     <header class="ao-header nav-down">
-    <!-- Navigation section -->
-      <img id="logo" src="assets/img/ao-logo-400.png" alt=“AO” height="40px" width="40px" />
+      <!-- Navigation section -->
+      <img id="logo" src="assets/img/ao-logo.png" alt=“AO” height="40px" width="40px"/>
       <!-- replace with image -->
       <span style="color:#4BACC6">AudioOrange</span>
       <!--<nav class="menu">-->
@@ -45,7 +51,7 @@
         <li>Contact</li>
         <li>GitHub</li>
       </ul>
-    <!--</nav>-->
+      <!--</nav>-->
     </header>
 
     <div class="ao-topper">
@@ -60,26 +66,19 @@
       tail area
     </div>
 
-    <!--<main>-->
-    <!--<section>-->
-      <!--&lt;!&ndash; Add your site or application content here &ndash;&gt;-->
-      <!--<img src="testDNSConfig/Meribel_01.jpg" alt="">-->
-      <!--<img src="testDNSConfig/Meribel_02.jpg" alt="">-->
-      <!--<img src="testDNSConfig/Meribel_03.jpg" alt="">-->
-    <!--</section>-->
-  <!--</main>-->
-  <footer class="ao-footer">
-    my footer
-    <div>
-      <ul>
-        <li>about</li>
-        <li>Contact</li>
-        <li>GutHub</li>
-        <li>LinkedIn</li>
-      </ul>
-    </div>
+    <footer class="ao-footer">
+      my footer
+      <div>
+        <ul>
+          <li>about</li>
+          <li>Contact</li>
+          <li>GutHub</li>
+          <li>LinkedIn</li>
+        </ul>
+      </div>
+    </footer>
 
-  </footer>
+
 
   <script>
     $(function () {
@@ -88,16 +87,11 @@
       var delta = 50;      //Note: movement tolerance (aka mouse sensitivity)
       var navbarHeight = $('header').outerHeight();  //dynamically find menu height
 
-      /* call via named fn */
-      //$(window).scroll(hasScrolled);
-
-      /* optimized scroll technique.. throttling */
+      /* optimized scroll technique.. aka throttling */
       var didScroll;
-
       $(window).scroll(function (event) {
         didScroll = true;
       });
-
       setInterval(function () {
         if (didScroll) {
           hasScrolled();
@@ -115,11 +109,12 @@
 
         // stop progress if not scrolled more than delta
         if (Math.abs(lastScrollTop - st) <= delta) {
-          lastScrollTop = st;  //Note: my alternative comment below
+          lastScrollTop = st;  //Note: comment below
           return;
         }
-        /* my Alternative - more speed of scroll, not total px amount scrolled
-         basic always fires once threshold exceeded, my Alternative is relative to last position                       -- if rest last top then scroll has to be rapid (not slow), to exceed threshold
+        /* more speed of scroll, not total px amount scrolled
+         basic always fires once threshold exceeded, alternative is relative to last position
+         (if return last top then scroll has to be rapid (not slow), to exceed threshold)
          */
 
         // if scrolled down & past navbar, add class .nav-up.
@@ -129,7 +124,7 @@
           $('header').removeClass('nav-down').addClass('nav-up');
         } else {
           // Scroll Up
-          // If did not scroll past the document (possible on mac)...!
+          // if did not scroll past the document (possible on mac)...!
           if (st + $(window).height() < $(document).height()) {
             $('header').removeClass('nav-up').addClass('nav-down');
           }
@@ -140,7 +135,6 @@
     });
 
   </script>
-
 
 </body>
 </html>
