@@ -11,8 +11,9 @@
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
     <link rel="stylesheet" href="assets/css/normalize.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!--<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">-->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--switch to local for dev - so code completion sees bootstrap classes -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/ao.css">
 
     <!--[if lt IE 8]>
@@ -37,47 +38,91 @@
   </head>
 
   <body>
-  
-    <header class="ao-header nav-down">
-      <!-- Navigation section -->
-      <img id="logo" src="assets/img/ao-logo.png" alt=“AO” height="40px" width="40px"/>
-      <!-- replace with image -->
-      <span style="color:#4BACC6">AudioOrange</span>
-      <!--<nav class="menu">-->
-      <ul>
-        <li>Services</li>
-        <li>Portfolio</li>
-        <li>Media</li>
-        <li>Contact</li>
-        <li>GitHub</li>
-      </ul>
-      <!--</nav>-->
-    </header>
+  <div class="container-fluid fill">
 
-    <div class="ao-topper">
 
+    <div id="row1" class="row">
+
+      <header class="ao-nav nav-down">
+
+        <div class="col-xs-12">
+
+          <img class="logo" src="assets/img/ao-logo.png" alt=“AO” />
+          <span class="logo-text">AudioOrange</span>
+
+          <nav>
+            <ul>
+              <li class="active">About</li>
+              <li>Showcase</li>
+              <li>Media</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+
+        </div>
+
+      </header>
     </div>
 
-    <div class="ao-info">
-      info area
-    </div>
 
-    <div class="ao-tail">
-      tail area
-    </div>
+    <!--<div class="row">-->
+      <!--<header class="ao-nav nav-down">-->
+        <!--&lt;!&ndash; Navigation section &ndash;&gt;-->
+          <!--<img id="logo" src="assets/img/ao-logo.png" alt=“AO”-->
+                   <!--height="80px" width="80px" />-->
+          <!-- replace with image -->
+          <!--<span style="position:relative; font-size:2.2em;-->
+                <!--font-style: italic; font-weight: 700;-->
+                <!--left:1%; top:15px; color:#4BACC6">AudioOrange</span>-->
+          <!--<nav class="menu">-->
+          <!--<ul>-->
+            <!--<li class="active">About</li>-->
+            <!--<li>Work</li>-->
+            <!--<li>Media</li>-->
+            <!--<li>Contact</li>-->
+          <!--</ul>-->
+        <!--</nav>-->
+      <!--</header>-->
+    <!--</div>-->
 
-    <footer class="ao-footer">
-      my footer
-      <div>
-        <ul>
-          <li>about</li>
-          <li>Contact</li>
-          <li>GutHub</li>
-          <li>LinkedIn</li>
-        </ul>
+
+
+
+
+
+
+    <div class="row fill">
+      <div class="ao-topper">
+        <!--<h1>topper</h1>-->
       </div>
-    </footer>
+    </div>
 
+    <div class="row fill">
+      <div class="ao-info">
+        <h1>info</h1>
+      </div>
+    </div>
+
+    <div class="row fill">
+      <div class="ao-tail">
+        <h1>tail</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="ao-footer">
+        <span style="color:grey">Copyright © 2016, Steve Palmer</span>
+        <div>
+          <ul>
+            <li>about</li>
+            <li>Contact</li>
+            <li>GutHub</li>
+            <li>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <script>
@@ -110,6 +155,7 @@
         // stop progress if not scrolled more than delta
         if (Math.abs(lastScrollTop - st) <= delta) {
           lastScrollTop = st;  //Note: comment below
+
           return;
         }
         /* more speed of scroll, not total px amount scrolled
@@ -119,7 +165,7 @@
 
         // if scrolled down & past navbar, add class .nav-up.
         // (necessary so never see what is "behind" the navbar)
-        if (st > lastScrollTop && st > (navbarHeight + 200)) {
+        if (st > lastScrollTop && st > (navbarHeight + 180)) {
           // Scroll Down
           $('header').removeClass('nav-down').addClass('nav-up');
         } else {
