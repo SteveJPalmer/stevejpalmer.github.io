@@ -1,5 +1,11 @@
 /* page & element effects */
 
+
+/* class to hide header/menu */
+.nav-up {
+  top: -100px; /* same as menu height tip: use variables scss/less*/
+}
+
 /* header & footer list item hover */
 .ao-nav a:hover, .ao-footer a:hover {
   /*background-color: black;  !* black white antiquewhite  *!*/

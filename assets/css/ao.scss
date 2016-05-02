@@ -1,18 +1,15 @@
-
-
+/* import partials */
 @import '_variables.scss';
 @import '_utils.scss';
 @import '_effects.scss';
 
-/* main content areas */
-/*	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #303538 #929292	#A7A7A7  - Footer #303538*/
+/* core style rules */
 html, body {
   height: 100%;
 }
 
 .body {
-  font-family: $ao-font-family !important;
-  //font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: $ao-font-family !important;  //font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 /* ao header */
@@ -36,7 +33,7 @@ html, body {
   transition: top 0.8s ease;
 }
 
-/* ao header - alternative IE9+ (replace when drop IE8 support) */
+/* alternative IE9+ (replace when drop IE8 support) */
 .ao-nav2 {
   position: fixed;
   /* center the element (horizontally) */
@@ -76,16 +73,19 @@ html, body {
   color: #4BACC6;
 }
 
+/* inital Logo letters */
 .ao-nav .logo-text span {
   font-size: 1.3em;
 }
 
+/* nav containers (desktop & mobile) */
 .ao-nav nav {
   display: inline-block;
   float: right;
   margin-top: 42px;
 }
 
+/* desktop nav list */
 .ao-nav li {
   display: inline;
   margin-left: 18px;
@@ -94,10 +94,18 @@ html, body {
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
 }
+
+/* space LinkedIn & Github links */
+.ao-nav li.edge {
+  margin-left: 6px;
+}
+
+/* active nav item */
 .ao-nav li.active {
   border-bottom: solid 0.5px #4BACC6;
 }
 
+/* override Bootstrap anchor style */
 .ao-nav a {
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
@@ -105,23 +113,16 @@ html, body {
   text-decoration: none;
 }
 
-
-/* class to hide header/menu */
-.nav-up {
-  top: -110px; /* same as menu height tip: use variables scss/less*/
+/* mobile  nav list */
+.ao-header-ul-mobile {
+  display: none;
 }
 
 
 
 
-//.ao-nav-hover:hover {
-//  /*background-color: black;  !* black white antiquewhite  *!*/
-//  color: #F79646;
-//  -webkit-transition: color 0.2s ease;
-//  transition: color 0.2s ease;
-//}
 
-
+/* Footer */
 .ao-footer {
   height: 100px;
   width: 100%;
@@ -145,6 +146,7 @@ html, body {
   transition: color 1.5s ease;
 }
 
+/* override Bootstrap anchor style */
 .ao-footer a {
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
@@ -152,9 +154,9 @@ html, body {
   text-decoration: none;
 }
 
-
-
-
+.ao-footer p {
+  color: $ao-grey-dark;
+}
 
 
 
@@ -176,4 +178,30 @@ html, body {
 .ao-tail {
   height: 100%;
   background-color: #78C1D4;
+}
+
+
+/*custom tablet|mobile styling */
+@media screen and (max-width: 767px) {
+
+  .ao-nav .ao-header-ul {
+    display: none;
+  }
+
+  .ao-header-ul-mobile {
+    display: inline-block;
+  }
+
+}
+
+
+@media screen and (max-width: 850px) {
+  .ao-header-ul {
+    font-size: 0.9em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ao-header-ul {
+    font-size: 1.1em;
+  }
 }

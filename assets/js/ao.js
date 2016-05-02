@@ -1,0 +1,68 @@
+$(function () {
+  // scroll control variables
+  var lastScrollTop = 0;
+  var delta = 50;      //Note: movement tolerance (aka mouse sensitivity)
+  var navbarHeight = $('header').outerHeight();  //dynamically find menu height
+
+  /* optimized scroll technique.. aka throttling */
+  var didScroll;
+  $(window).scroll(function (event) {
+    didScroll = true;
+  });
+  setInterval(function () {
+    if (didScroll) {
+      hasScrolled();
+      didScroll = false;
+    }
+  }, 250);    //Note: slow it right down to check throttling
+
+  function hasScrolled() {
+    console.log('>>fn hasScrolled start');
+    var st = $(this).scrollTop();
+    console.log('....scrollTop (st):' + st);
+    console.log('....lastScrollTop:' + lastScrollTop);
+    console.log('....window height' + $(window).height());
+    console.log('....document height' + $(document).height());
+
+    // stop progress if not scrolled more than delta
+    if (Math.abs(lastScrollTop - st) <= delta) {
+      lastScrollTop = st;  //Note: comment below
+
+      return;
+    }
+    /* more speed of scroll, not total px amount scrolled
+     basic always fires once threshold exceeded, alternative is relative to last position
+     (if return last top then scroll has to be rapid (not slow), to exceed threshold)
+     */
+
+    // if scrolled down & past navbar, add class .nav-up.
+    // (necessary so never see what is "behind" the navbar)
+    if (st > lastScrollTop && st > (navbarHeight + 180)) {
+      // Scroll Down
+      $('header').removeClass('nav-down').addClass('nav-up');
+    } else {
+      // Scroll Up
+      // if did not scroll past the document (possible on mac)...!
+      if (st + $(window).height() < $(document).height()) {
+        $('header').removeClass('nav-up').addClass('nav-down');
+      }
+    }
+    lastScrollTop = st;
+  }
+
+});
+
+/* function animates scroll to 'info' section (index page) */
+  function showContact() {
+
+  $('html, body').stop(true, true).animate({
+    scrollTop: parseInt($("#contact").offset().top -100)   //100
+  }, {
+    duration: 500,
+    complete: function() {
+      $('header').removeClass('nav-up').addClass('nav-down')
+    }
+  });
+  //true subsequently fires href,  false stops href
+  return false;
+};

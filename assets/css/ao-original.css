@@ -1,0 +1,173 @@
+
+/* main content areas */
+/*	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #303538 #929292	#A7A7A7  - Footer #303538*/
+html, body {
+  height: 100%;
+}
+
+.body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.col-centered {
+  margin: 0 auto;
+}
+
+.col-centered2 {
+  text-align: center;
+}
+
+.col-centered3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* ao header */
+.ao-nav {
+  position: fixed;
+  /* center the element (horizontally) */
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  /* position & dimensions */
+  top: 0px;
+  height: 100px;
+  width: 95%;
+  max-width: 1200px;
+  /* style */
+  background-color: #ffffff; /* RWD tests */
+  opacity: 1;
+  z-index: 999;
+  transition: top 0.8s ease;
+}
+
+
+/* ao header - alternative IE9+ (replace when drop IE8 support) */
+.ao-nav2 {
+  position: fixed;
+  /* center the element (horizontally) */
+  left: 50%;
+  /*width: auto;*/
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /* position & dimensions */
+  top: 0px;
+  height: 100px;
+  width: 90%;
+  max-width: 1200px;
+  /* style */
+  /*background-color: lightpink; !* RWD tests *!*/
+  transition: top 0.8s ease;
+}
+
+.ao-nav .logo {
+  float: left;
+  height:80px;
+  width:80px;
+  margin-top: 15px;
+}
+
+.ao-nav .logo-text {
+  position:relative;
+  left: 1%;
+  top: 34px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size:2.0em;
+  font-style: italic;
+  font-weight: 700;
+  color:#4BACC6;
+}
+
+.ao-nav .logo-text span {
+  font-size:1.3em;
+}
+
+.ao-nav nav {
+  display: inline-block;
+  float: right;
+  margin-top:42px;
+}
+
+.ao-nav li {
+  display: inline;
+  margin-left: 18px;
+  font-size: 1.4em;
+  color: #4BACC6;
+  transition: color 1.5s ease;
+}
+.ao-nav li.active {
+  border-bottom: solid 0.5px #4BACC6;
+}
+
+
+/* class to hide header/menu */
+.nav-up {
+  top: -110px; /* same as menu height tip: use variables scss/less*/
+}
+
+
+/*header & footer effects */
+.ao-nav li:hover, .ao-footer li:hover {
+  /*background-color: black;  !* black white antiquewhite  *!*/
+  color: #F79646;
+  transition: color 0.2s ease;
+}
+
+
+.ao-footer {
+  height: 120px;
+  width: 100%;
+  background-color: #303538;  /* black white antiquewhite */
+}
+
+.ao-footer ul {
+  display: inline-block;
+  float: right;
+  margin-top:42px;
+}
+
+.ao-footer li {
+  display: inline;
+  margin-left: 18px;
+  font-size: 1.4em;
+  color: #4BACC6;
+  transition: color 1.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+/* content */
+.ao-topper {
+  height: 100%;
+  min-height: 100%;
+  background-color: white;   /* #FBCBA2	#F9B074 #F79646 */
+}
+
+.ao-info {
+  height: 100%;
+  background-color: #A5D5E3;
+}
+
+.ao-tail {
+  height: 100%;
+  background-color: #78C1D4;
+}

@@ -14,6 +14,7 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <!--switch to local for dev - so code completion sees bootstrap classes -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/ao.css">
 
     <!--[if lt IE 8]>
@@ -48,15 +49,23 @@
           <nav>
             <ul class="ao-header-ul">
               <li class="active"><a href="#">About</a></li>
-              <li><a href="">Showcase</a></li>
-              <li><a href="">Media</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="showcase.html">Showcase</a></li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
+              </a></li>
+              <li class="edge"><a target="_blank" href="https://github.com/SteveJPalmer">
+                <span class="fa fa-github ao-font-large fa-1x" aria-hidden="true"></span>
+              </a></li>
+            </ul>
+            <ul class="ao-header-ul-mobile">
+              <li>Hamburger</li>
             </ul>
           </nav>
         </div>
       </header>
     </div>
-
 
 
     <div class="row ao-fill">
@@ -65,7 +74,7 @@
       </div>
     </div>
 
-    <div class="row ao-fill">
+    <div id="contact" name="contact" class="row ao-fill">
       <div class="ao-info">
         <h1>info</h1>
       </div>
@@ -96,92 +105,40 @@
 
             </div>
             <div class="col-xs-12 col-sm-6 col-centered2">  <!-- center-block -->
-              <span>Theme & palette for AudioOrange.com </span>
+              <span style="margin-bottom: 4px; color: #303538;">Theme & palette for AudioOrange.com </span>
               <img class="img-theme" src="assets/img/Theme-AudioOrange.png" alt=“AO”
-                   height="290px" width="380px" style="margin-bottom: 20px"/>
+                   height="290px" width="380px" style="margin-bottom: 20px; border:2px solid #4BACC6;"/>
             </div>
           </div>
 
         </div>
-
 
       </div>
     </div>
 
     <div class="row">
       <div class="ao-footer">
-        <div class="ao-center-page">
-          <div class="clearfix">
-            <ul class="ao-footer-ul">
-              <li><a href="#">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">LinkedIn</a></li>
-              <li><a target="_blank" href="https://github.com/SteveJPalmer">GitHub</a></li>
-            </ul>
+        <div class="col-xs-12">
+          <div class="ao-center-page">
+            <div class="clearfix">
+              <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                  LinkedIn <span class="fa fa-linkedin-square ao-font-overweight fa-1x" aria-hidden="true"></span>
+                </a></li>
+                <li><a target="_blank" href="https://github.com/SteveJPalmer">
+                  GitHub <span class="fa fa-github ao-font-overweight fa-1x" aria-hidden="true"></span>
+                </a></li>
+              </ul>
+            </div>
+            <p>Copyright © 2016, Steve Palmer</p>
           </div>
-          <p style="color:grey">Copyright © 2016, Steve Palmer</p>
         </div>
       </div>
     </div>
   </div>
 
-
-  <script>
-    $(function () {
-      // scroll control variables
-      var lastScrollTop = 0;
-      var delta = 50;      //Note: movement tolerance (aka mouse sensitivity)
-      var navbarHeight = $('header').outerHeight();  //dynamically find menu height
-
-      /* optimized scroll technique.. aka throttling */
-      var didScroll;
-      $(window).scroll(function (event) {
-        didScroll = true;
-      });
-      setInterval(function () {
-        if (didScroll) {
-          hasScrolled();
-          didScroll = false;
-        }
-      }, 250);    //Note: slow it right down to check throttling
-
-      function hasScrolled() {
-        console.log('>>fn hasScrolled start');
-        var st = $(this).scrollTop();
-        console.log('....scrollTop (st):' + st);
-        console.log('....lastScrollTop:' + lastScrollTop);
-        console.log('....window height' + $(window).height());
-        console.log('....document height' + $(document).height());
-
-        // stop progress if not scrolled more than delta
-        if (Math.abs(lastScrollTop - st) <= delta) {
-          lastScrollTop = st;  //Note: comment below
-
-          return;
-        }
-        /* more speed of scroll, not total px amount scrolled
-         basic always fires once threshold exceeded, alternative is relative to last position
-         (if return last top then scroll has to be rapid (not slow), to exceed threshold)
-         */
-
-        // if scrolled down & past navbar, add class .nav-up.
-        // (necessary so never see what is "behind" the navbar)
-        if (st > lastScrollTop && st > (navbarHeight + 180)) {
-          // Scroll Down
-          $('header').removeClass('nav-down').addClass('nav-up');
-        } else {
-          // Scroll Up
-          // if did not scroll past the document (possible on mac)...!
-          if (st + $(window).height() < $(document).height()) {
-            $('header').removeClass('nav-up').addClass('nav-down');
-          }
-        }
-        lastScrollTop = st;
-      }
-
-    });
-
-  </script>
-
+  <script src="assets/js/ao.js"></script>
 </body>
 </html>
