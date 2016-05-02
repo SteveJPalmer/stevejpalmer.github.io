@@ -1,0 +1,42 @@
+/* ao helper classes */
+@import 'variables';
+
+/* bootstrap .clearfix or... */
+#ao-clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.ao-font-family {
+  font-family: $ao-font-family !important;
+}
+
+.ao-fill {
+  height: 100%;
+  min-height: 100%;
+}
+
+.ao-center-page {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.col-centered {
+  margin: 0 auto;
+}
+
+.col-centered2 {
+  text-align: center;
+}
+
+.col-centered3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

@@ -1,0 +1,10 @@
+/* page & element effects */
+
+/* header & footer list item hover */
+.ao-nav a:hover, .ao-footer a:hover {
+  /*background-color: black;  !* black white antiquewhite  *!*/
+  color: #F79646;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
