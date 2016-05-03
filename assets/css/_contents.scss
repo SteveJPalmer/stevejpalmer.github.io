@@ -16,19 +16,21 @@
 }
 
 .ao-contacts {
-  height: 82%;
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  -webkit-transform: translateY(-50%), translateX(-50%);
+  -moz-transform: translateY(-50%), translateX(-50%);
+  -ms-transform: translateY(-50%), translateX(-50%);
+  -o-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+
+  color: $ao-grey-light;
   background-color: $ao-the-new-black;
 }
 
-.ao-contacts .ao-contacts-container {
-  position: relative;
-  top: 280px;
-  color: $ao-grey-light;
-
-}
-
 .ao-contacts p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 2em;
 }
 
@@ -54,25 +56,21 @@
   text-decoration: none;
 }
 
-
-
 @media screen and (max-width: 767px) {
-  .ao-contacts .ao-contacts-container p {
+  .ao-contacts p {
     font-size: 1.5em;
   }
-  .ao-contacts .ao-contacts-container span {
+  .ao-contacts span {
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 550px) {
-  .ao-contacts .ao-contacts-container p {
+  .ao-contacts p {
     font-size: 1.2em;
   }
-  .ao-contacts .ao-contacts-container span {
+  .ao-contacts span {
     font-size: 0.8em;
   }
-  .ao-contacts .ao-contacts-container {
-    top: 300px;
-  }
+
 }

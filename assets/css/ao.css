@@ -230,16 +230,19 @@ html, body {
   background-color: #303538; }
 
 .ao-contacts {
-  height: 82%;
+  position: fixed;
+  top: 40%;
+  left: 20%;
+  -webkit-transform: translateY(-50%), translateX(-50%);
+  -moz-transform: translateY(-50%), translateX(-50%);
+  -ms-transform: translateY(-50%), translateX(-50%);
+  -o-transform: translateY(-50%), translateX(-50%);
+  transform: translateY(-50%), translateX(-50%);
+  color: #A7A7A7;
   background-color: #303538; }
 
-.ao-contacts .ao-contacts-container {
-  position: relative;
-  top: 280px;
-  color: #A7A7A7; }
-
 .ao-contacts p {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
   font-size: 2em; }
 
 .ao-contacts span {
@@ -262,20 +265,17 @@ html, body {
   text-decoration: none; }
 
 @media screen and (max-width: 767px) {
-  .ao-contacts .ao-contacts-container p {
+  .ao-contacts p {
     font-size: 1.5em; }
 
-  .ao-contacts .ao-contacts-container span {
+  .ao-contacts span {
     font-size: 1em; } }
 @media screen and (max-width: 550px) {
-  .ao-contacts .ao-contacts-container p {
+  .ao-contacts p {
     font-size: 1.2em; }
 
-  .ao-contacts .ao-contacts-container span {
-    font-size: 0.8em; }
-
-  .ao-contacts .ao-contacts-container {
-    top: 300px; } }
+  .ao-contacts span {
+    font-size: 0.8em; } }
 /* _utils partial */
 /* ao helper classes */
 /* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
