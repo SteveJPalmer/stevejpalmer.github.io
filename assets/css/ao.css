@@ -155,7 +155,9 @@ html, body {
 
 /* hamburger/mobile nav (show/hide) */
 .ao-nav .ao-hamburger-nav.ao-hide {
-  display: none; }
+  opacity: 0;
+  -webkit-transition: opacity 1.2s ease;
+  transition: opacity 1.2s ease; }
 
 /* Footer */
 .ao-footer {
@@ -198,7 +200,7 @@ html, body {
 
   .ao-nav .ao-header-hamburger {
     display: inline-block; } }
-/* hide mobile menu */
+/* remove mobile menu */
 @media screen and (min-width: 768px) {
   #mobile-nav {
     display: none; } }
@@ -223,6 +225,7 @@ html, body {
   min-height: 100%;
   background-color: pink; }
 
+/* contacts.html page */
 .container-fluid-contacts {
   background-color: #303538; }
 
@@ -232,11 +235,11 @@ html, body {
 
 .ao-contacts .ao-contacts-container {
   position: relative;
-  top: 180px;
+  top: 280px;
   color: #A7A7A7; }
 
 .ao-contacts p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 2em; }
 
 .ao-contacts span {
@@ -272,7 +275,7 @@ html, body {
     font-size: 0.8em; }
 
   .ao-contacts .ao-contacts-container {
-    top: 200px; } }
+    top: 300px; } }
 /* _utils partial */
 /* ao helper classes */
 /* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/

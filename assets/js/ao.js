@@ -40,6 +40,7 @@ $(function () {
     if (st > lastScrollTop && st > (navbarHeight + 180)) {
       // Scroll Down
       $('header').removeClass('nav-down').addClass('nav-up');
+      $('.ao-hamburger-nav').addClass('ao-hide');
     } else {
       // Scroll Up
       // if did not scroll past the document (possible on mac)...!
@@ -53,7 +54,7 @@ $(function () {
 });
 
 function toggleMobileMenu() {
-    $(".ao-hamburger-nav").toggleClass("ao-hide");
+    $('.ao-hamburger-nav').toggleClass('ao-hide');
 };
 
 

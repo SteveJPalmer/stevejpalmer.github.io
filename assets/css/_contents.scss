@@ -8,6 +8,9 @@
   background-color: pink;
 }
 
+
+
+/* contacts.html page */
 .container-fluid-contacts {
   background-color: $ao-the-new-black;
 }
@@ -19,13 +22,13 @@
 
 .ao-contacts .ao-contacts-container {
   position: relative;
-  top: 180px;
+  top: 280px;
   color: $ao-grey-light;
 
 }
 
 .ao-contacts p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   font-size: 2em;
 }
 
@@ -70,6 +73,6 @@
     font-size: 0.8em;
   }
   .ao-contacts .ao-contacts-container {
-    top: 200px;
+    top: 300px;
   }
 }
