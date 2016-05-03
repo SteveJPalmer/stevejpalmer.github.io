@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>AudioOrange</title>
+		<meta name="description" content="AudioOrange Website">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
+    <!--switch to local for dev - so code completion sees bootstrap classes -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/ao.css">
+
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- HTML5shiv & Respond.js polyfills - HTML5 elements & media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery with fallback (necessary for Bootstrap js plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"
+            integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-1.12.3.min.js"><\/script>')</script>
+
+    <!-- bootstrap core -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+
+  </head>
+  <!-- 'font-family: Georgia, "Times New Roman", Times, serif;' -->
+  <body>
+  <div class="container-fluid ao-fill ao-font-family">
+
+    <div class="row">
+      <header class="ao-nav nav-down">
+        <div class="col-xs-12">
+          <a href="index.html">
+            <img class="logo" src="assets/img/ao-logo.png" alt=“AO” />
+          </a>
+          <span class="logo-text"><span>A</span>udio<span>O</span>range</span>
+          <nav>
+            <ul class="ao-header-ul">
+              <li><a href="index.html">About</a></li>
+              <li><a href="showcase.html">Showcase</a></li>
+              <li class="active"><a href="media.html">Media</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
+              </a></li>
+              <li class="edge"><a target="_blank" href="https://github.com/SteveJPalmer">
+                <span class="fa fa-github ao-font-large fa-1x" aria-hidden="true"></span>
+              </a></li>
+            </ul>
+            <ul class="ao-header-hamburger">
+              <li class="edge" onclick="toggleMobileMenu();">
+                <span class="fa fa-bars ao-font-large fa-1x" aria-hidden="true"></span>
+              </li>
+            </ul>
+          </nav>
+          <!--mobile nav (show/hide) -->
+          <nav class="ao-hamburger-nav ao-hide" id="mobile-nav">
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="ao-header-ul-mobile">
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="showcase.html">Showcase</a></li>
+                  <li class="active"><a href="media.html">Media</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+
+        <div style="position:relative; height:84%">
+          <p style="position:relative; top:45%; left: 20%;
+             font-size: 3em; font-style: italic; color: coral">
+             Under Construction...</p>
+        </div>
+
+
+    <div class="row">
+      <div class="ao-footer">
+        <div class="col-xs-12">
+          <div class="ao-center-page">
+            <div class="clearfix">
+              <ul class="ao-footer-ul">
+                <li><a href="index.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                  LinkedIn <span class="fa fa-linkedin-square ao-font-overweight fa-1x" aria-hidden="true"></span>
+                </a></li>
+                <li><a target="_blank" href="https://github.com/SteveJPalmer">
+                  GitHub <span class="fa fa-github ao-font-overweight fa-1x" aria-hidden="true"></span>
+                </a></li>
+              </ul>
+            </div>
+            <p>Copyright © 2016, Steve Palmer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/ao.js"></script>
+</body>
+</html>

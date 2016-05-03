@@ -24,10 +24,21 @@
   min-height: 100%;
 }
 
+.ao-hr {
+  height: 1px;
+  background-color: $ao-orange-dark;
+}
+
 /* centering styles */
-.ao-center-page {
+.ao-center-page-80 {
   margin: 0 auto;
   width: 80%;
+  max-width: 1200px;
+}
+
+.ao-center-page-90 {
+  margin: 0 auto;
+  width: 90%;
   max-width: 1200px;
 }
 
@@ -48,10 +59,13 @@
 
 /* font sizes */
 .ao-font-small {
-  font-size: 0.75em;
+  font-size: 0.8em;
 }
 .ao-font-nornal {
   font-size: 1em;
+}
+.ao-font-big {
+  font-size: 1.15em;
 }
 .ao-font-overweight {
   font-size: 1.25em;

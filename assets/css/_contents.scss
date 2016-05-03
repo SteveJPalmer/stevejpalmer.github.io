@@ -1,17 +1,75 @@
 /* _contents partial */
+@import '_variables';
 
-.ao-topper {
+.ao-carousel {
   height: 100%;
   min-height: 100%;
-  background-color: white;   /* #FBCBA2	#F9B074 #F79646 */
+  //background-color: white;
+  background-color: pink;
 }
 
-.ao-info {
-  height: 100%;
-  background-color: #A5D5E3;
+.container-fluid-contacts {
+  background-color: $ao-the-new-black;
 }
 
-.ao-tail {
-  height: 100%;
-  background-color: #78C1D4;
+.ao-contacts {
+  height: 82%;
+  background-color: $ao-the-new-black;
+}
+
+.ao-contacts .ao-contacts-container {
+  position: relative;
+  top: 180px;
+  color: $ao-grey-light;
+
+}
+
+.ao-contacts p {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.ao-contacts span {
+  color: $ao-blue-dark;
+  font-size: 1em;
+  font-style: italic;
+}
+
+/* override Bootstrap anchor style */
+.ao-contacts a {
+  color: $ao-grey-light;
+  -webkit-transition: color 1.5s ease;
+  transition: color 2s ease;
+  text-decoration: none;
+}
+
+/* header & footer list item hover */
+.ao-contacts a:hover {
+  color: $ao-orange-dark;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+  .ao-contacts .ao-contacts-container p {
+    font-size: 1.5em;
+  }
+  .ao-contacts .ao-contacts-container span {
+    font-size: 1em;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ao-contacts .ao-contacts-container p {
+    font-size: 1.2em;
+  }
+  .ao-contacts .ao-contacts-container span {
+    font-size: 0.8em;
+  }
+  .ao-contacts .ao-contacts-container {
+    top: 200px;
+  }
 }
