@@ -41,7 +41,7 @@
   <body>
   <div class="container-fluid ao-fill ao-font-family">
 
-    <div id="row1" class="row">
+    <div class="row">
       <header class="ao-nav nav-down">
         <div class="col-xs-12">
           <img class="logo" src="assets/img/ao-logo.png" alt=“AO” />
@@ -59,15 +59,31 @@
                 <span class="fa fa-github ao-font-large fa-1x" aria-hidden="true"></span>
               </a></li>
             </ul>
-            <ul class="ao-header-ul-mobile">
-              <li>Hamburger</li>
+            <ul class="ao-header-hamburger">
+              <li class="edge" onclick="toggleMobileMenu();">
+                <span class="fa fa-bars ao-font-large fa-1x" aria-hidden="true"></span>
+              </li>
             </ul>
+          </nav>
+          <!--mobile nav (show/hide) -->
+          <nav class="ao-hamburger-nav ao-hide" id="mobile-nav">
+            <div class="row">
+              <div class="col-xs-12">
+                <ul class="ao-header-ul-mobile">
+                  <li class="active"><a href="#">About</a></li>
+                  <li><a href="showcase.html">Showcase</a></li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
           </nav>
         </div>
       </header>
     </div>
 
 
+    <!-- carousel -->
     <div class="row ao-fill">
       <div class="ao-topper">
         <!--<h1>topper</h1>-->
@@ -87,7 +103,7 @@
         <div class="col-xs-12">
           <h1 style="color: #303538"><i><b>Design</b></i></h1>
           <div class="row">
-            <div class="col-xs-12 col-sm-6" style="padding:4%">
+            <div class="col-xs-12 col-sm-6" style="padding:3%">
               <br>
               <P><span style="font-size:1.3em;">B</span>est design book i have read is Responsive Web Design (E.Marcotte),
                 its concise and engaging to read.  Certainly helped me understand the thoery behind RWD.</P>
@@ -105,7 +121,7 @@
 
             </div>
             <div class="col-xs-12 col-sm-6 col-centered2">  <!-- center-block -->
-              <span style="margin-bottom: 4px; color: #303538;">Theme & palette for AudioOrange.com </span>
+              <span style="margin-bottom: 4px; color: #929292; font-size:1.2em;">Theme & palette for AudioOrange.com </span>
               <img class="img-theme" src="assets/img/Theme-AudioOrange.png" alt=“AO”
                    height="290px" width="380px" style="margin-bottom: 20px; border:2px solid #4BACC6;"/>
             </div>
@@ -121,7 +137,7 @@
         <div class="col-xs-12">
           <div class="ao-center-page">
             <div class="clearfix">
-              <ul>
+              <ul class="ao-footer-ul">
                 <li><a href="#">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">

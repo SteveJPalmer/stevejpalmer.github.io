@@ -52,6 +52,16 @@ $(function () {
 
 });
 
+function toggleMobileMenu() {
+    $(".ao-hamburger-nav").toggleClass("ao-hide");
+};
+
+
+
+/* --------
+    parked
+   --------*/
+
 /* function animates scroll to 'info' section (index page) */
   function showContact() {
 

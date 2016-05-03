@@ -1,19 +1,15 @@
-/* core */
-/* import partials */
-/* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
-/* fonts */
-/* colours */
 /* _navbars partial */
+
 /* core style rules */
 html, body {
-  height: 100%; }
+  height: 100%;
+}
 
 .body {
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif';
-  /*font-family: Georgia, "Times New Roman", Times, serif; */ }
+  font-family: $ao-font-family;  /*font-family: Georgia, "Times New Roman", Times, serif; */
+}
 
-/* ao header */
-/* scroll hide/show, controlled by classes nav-up & nav-down */
+/* ao header */   /* scroll hide/show, controlled by classes nav-up & nav-down */
 .ao-nav {
   position: fixed;
   /* center the element (horizontally) */
@@ -32,7 +28,8 @@ html, body {
   -webkit-transition: top 0.8s ease;
   transition: top 0.8s ease;
   /* experimental */
-  border-radius: 15px; }
+  border-radius:15px;
+}
 
 /* alternative IE9+ (replace when drop IE8 support) */
 .ao-nav2 {
@@ -52,33 +49,38 @@ html, body {
   /* style */
   /*background-color: lightpink; !* RWD tests *!*/
   -webkit-transition: top 0.8s ease;
-  transition: top 0.8s ease; }
+  transition: top 0.8s ease;
+}
 
 .ao-nav .logo {
   float: left;
   height: 85px;
   width: 85px;
-  margin-top: 8px; }
+  margin-top: 8px;
+}
 
 .ao-nav .logo-text {
   position: relative;
   left: 1%;
   top: 28px;
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif';
+  font-family: $ao-font-family;
   font-size: 2.2em;
   font-style: italic;
   font-weight: 700;
-  color: #4BACC6; }
+  color: #4BACC6;
+}
 
 /* inital Logo letters */
 .ao-nav .logo-text span {
-  font-size: 1.3em; }
+  font-size: 1.3em;
+}
 
 /* nav containers (desktop) */
 .ao-nav nav {
   display: inline-block;
   float: right;
-  margin-top: 34px; }
+  margin-top: 34px;
+}
 
 /* desktop nav list */
 .ao-nav li {
@@ -87,43 +89,51 @@ html, body {
   font-size: 1.4em;
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
-  transition: color 1.5s ease; }
+  transition: color 1.5s ease;
+}
 
 /* space LinkedIn & Github links */
 .ao-nav li.edge {
-  margin-left: 6px; }
+  margin-left: 6px;
+}
 
 /* active nav item */
 .ao-nav li.active {
-  text-decoration: underline; }
+  //border-bottom: solid 0.5px #4BACC6;
+  text-decoration: underline;
+}
 
 /* override Bootstrap anchor style */
 .ao-nav a {
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* mobile nav list */
 .ao-nav .ao-header-hamburger {
-  display: none; }
-
+  display: none;
+}
 .ao-nav .ao-hamburger-nav {
   clear: right;
   margin-top: 20px;
   margin-right: 15px;
   width: 140px;
   border-radius: 0 0 15px 15px;
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 /* nav containers (mobile) */
 .ao-nav .ao-hamburger-nav nav {
   display: block;
   float: right;
-  margin-top: 10px; }
+  margin-top: 10px;
+}
 
 .ao-nav .ao-hamburger-nav .ao-header-ul-mobile {
-  padding: 0px; }
+  padding: 0px;
+}
 
 /* mobile nav list */
 .ao-nav .ao-hamburger-nav li {
@@ -132,40 +142,53 @@ html, body {
   font-size: 1.2em;
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
-  transition: color 1.5s ease; }
+  transition: color 1.5s ease;
+}
+
+
+
+
+
+
+
+
 
 /* class to hide header/menu */
 .ao-nav.nav-up {
-  top: -100px;
-  /* same as menu height tip: use variables scss/less*/ }
+  top: -100px; /* same as menu height tip: use variables scss/less*/
+}
 
 .ao-nav.nav-down {
-  top: 0px;
-  /* same as menu height tip: use variables scss/less*/ }
+  top: 0px; /* same as menu height tip: use variables scss/less*/
+}
 
 /* header & footer list item hover */
 .ao-nav a:hover, .ao-footer a:hover, .ao-nav .ao-header-hamburger li:hover {
   color: #F79646;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 /* hamburger/mobile nav (show/hide) */
 .ao-nav .ao-hamburger-nav.ao-hide {
-  display: none; }
+  display: none;
+}
 
 /* Footer */
 .ao-footer {
   height: 100px;
   width: 100%;
-  background-color: #303538;
+  background-color: $ao-the-new-black;
   -webkit-transition: top 0.8s ease;
-  transition: top 0.8s ease; }
+  transition: top 0.8s ease;
+}
 
 .ao-footer ul {
   display: inline-block;
   float: right;
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 .ao-footer li {
   display: inline;
@@ -173,116 +196,58 @@ html, body {
   font-size: 1.4em;
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
-  transition: color 1.5s ease; }
+  transition: color 1.5s ease;
+}
 
 /* override Bootstrap anchor style */
 .ao-footer a {
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 .ao-footer p {
-  color: #929292; }
+  color: $ao-grey-dark;
+}
+
 
 /* ----------------------
    responsive adjustments
    ---------------------- */
+
 /* mobile nav */
 @media screen and (max-width: 767px) {
   .ao-nav .ao-header-ul {
-    display: none; }
-
+    display: none;
+  }
   .ao-nav .ao-header-hamburger {
-    display: inline-block; } }
+    display: inline-block;
+  }
+}
 /* hide mobile menu */
 @media screen and (min-width: 768px) {
   #mobile-nav {
-    display: none; } }
+    display: none;
+  }
+}
+
 /* header & footer ul - responsive font sizes */
 @media screen and (max-width: 850px) {
   .ao-nav .ao-header-ul {
-    font-size: 0.9em; } }
+    font-size: 0.9em;
+  }
+}
 /* iphone/mobile */
 @media screen and (max-width: 550px) {
   .ao-footer .ao-footer-ul {
-    font-size: 0.8em; } }
+    font-size: 0.8em;
+  }
+}
+
 /* widescreen - boost size */
 @media screen and (min-width: 1200px) {
   .ao-nav .ao-header-ul {
-    font-size: 1.1em; } }
-/* _contents partial */
-.ao-topper {
-  height: 100%;
-  min-height: 100%;
-  background-color: white;
-  /* #FBCBA2	#F9B074 #F79646 */ }
-
-.ao-info {
-  height: 100%;
-  background-color: #A5D5E3; }
-
-.ao-tail {
-  height: 100%;
-  background-color: #78C1D4; }
-
-/* _utils partial */
-/* ao helper classes */
-/* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
-/* fonts */
-/* colours */
-/* bootstrap .clearfix or... */
-#ao-clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-/* ao default style */
-.ao-font-family {
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif' !important; }
-
-/* full page height (spash screen) */
-.ao-fill {
-  height: 100%;
-  min-height: 100%; }
-
-/* centering styles */
-.ao-center-page {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px; }
-
-.col-centered {
-  margin: 0 auto; }
-
-.col-centered2 {
-  text-align: center; }
-
-.col-centered3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-
-/* font sizes */
-.ao-font-small {
-  font-size: 0.75em; }
-
-.ao-font-nornal {
-  font-size: 1em; }
-
-.ao-font-overweight {
-  font-size: 1.25em; }
-
-.ao-font-large {
-  font-size: 1.5em; }
-
-.ao-font-massive {
-  font-size: 1.75em; }
-
-/* _effects partial */
-
-/*# sourceMappingURL=ao.css.map */
+    font-size: 1.1em;
+  }
+}
