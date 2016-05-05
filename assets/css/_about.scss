@@ -1,15 +1,50 @@
 /**********************
  *   about partial    *
  **********************/
+@import '_variables';
 
-.ao-carousel {
+/* add layer under image for hue effect */
+body.about {
+  background-color: grey;
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease;
+}
+
+body.about:hover {
+  background-color: $ao-blue-dark;
+  -webkit-transition: background-color 2s ease;
+  transition: background-color 2s ease;
+}
+
+/* general styles across all sections */
+section h1 {
+  color: $ao-the-new-black;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+}
+
+section p {
+   color: $ao-grey-dark;
+   font-size: 18px;
+}
+
+section i {
+  color: $ao-grey-mid;
+  font-size: 14px;
+}
+
+
+
+/* splash page */
+.ao-splash {
   height: 100%;
   min-height: 100%;
   //background-color: white;
   //background-color: pink;
 }
 
-#bg-carousel-container {
+#bg-splash-container {
   position: fixed;
   top: -50%;
   left: -50%;
@@ -20,7 +55,7 @@
   -webkit-transition: opacity 1.2s ease;
   transition: opacity 1.2s ease;
 }
-#bg-carousel-container img {
+#bg-splash-container img {
   position: absolute;
   opacity: 0.74;
   top: 0;
@@ -30,4 +65,65 @@
   margin: auto;
   min-width: 50%;
   min-height: 50%;
+}
+
+/* info */
+.ao-info {
+  background-color: #fff;   /* can switch to transparent boarder */
+}
+
+.ao-info-container {
+  //height: 400px;
+  //background-color: #fff ;
+}
+
+/* given up trying to get the background image respondsive.. */
+
+/* container for image for aligning */
+.ao-portrait {
+  width: 90%;
+  height: 90%;
+  margin: 15px 0px 30px 0px;
+}
+
+.ao-portrait img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  border-radius: 50%;
+  border: solid 3px $ao-blue-dark;
+}
+
+.ao-portrait img:hover {
+  border: solid 3px $ao-orange-dark;
+}
+
+
+
+/* Skills */
+
+
+
+/* Design */
+.ao-design {
+  //background-color: #fff;
+}
+
+.ao-design-container {
+  //height: 600px;
+  //background-color: transparent;
+}
+
+/* Dev */
+
+
+/* Build */
+
+
+/* spacer */
+.ao-spacer {
+  background-color: transparent;
 }

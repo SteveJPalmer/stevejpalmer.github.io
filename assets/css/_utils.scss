@@ -37,6 +37,12 @@
   max-width: 1200px;
 }
 
+.ao-center-page-100 {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
 .col-centered {
   margin: 0 auto;
 }
@@ -52,7 +58,7 @@
   text-align: center;
 }
 
-/* font sizes */
+/* font Boosts.. (relative increments to section sizes) */
 .ao-font-small {
   font-size: 0.8em;
 }

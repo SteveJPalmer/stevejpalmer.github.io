@@ -2,6 +2,7 @@
  *   contacts partial    *
  *************************/
 
+/* background image centering */
 #bg-contacts-container{
   position: fixed;
   top: -50%;
@@ -27,10 +28,14 @@
   background-color: $ao-the-new-black;
 }
 
+
+
+/* contacts page will have transparent menu */
 .container-fluid-contacts .ao-nav, .container-fluid-contacts .ao-nav .ao-hamburger-nav {
   background-color: transparent;
 }
 
+/* contact details styling */
 .ao-contacts {
   position: fixed;
   top: 40%;
@@ -70,6 +75,7 @@
   text-decoration: none;
 }
 
+/* custom RWD */
 @media screen and (max-width: 767px) {
   .ao-contacts p {
     font-size: 1.5em;
@@ -86,5 +92,4 @@
   .ao-contacts span {
     font-size: 0.8em;
   }
-
 }
