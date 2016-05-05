@@ -3,6 +3,72 @@
 /* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
 /* fonts */
 /* colours */
+/* _utils partial */
+/* ao helper classes */
+/* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
+/* fonts */
+/* colours */
+/* bootstrap .clearfix or... */
+#ao-clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+/* ao default style */
+.ao-font-family {
+  font-family: 'font-family: Georgia, "Times New Roman", Times, serif' !important; }
+
+/* full page height (spash screen) */
+.ao-fill {
+  height: 100%;
+  min-height: 100%; }
+
+.ao-hr {
+  height: 1px;
+  background-color: #F79646; }
+
+/* centering styles */
+.ao-center-page {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px; }
+
+.col-centered {
+  margin: 0 auto; }
+
+.col-centered2 {
+  text-align: center; }
+
+.col-centered3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+
+/* font sizes */
+.ao-font-small {
+  font-size: 0.8em; }
+
+.ao-font-normal {
+  font-size: 1em; }
+
+.ao-font-big {
+  font-size: 1.15em; }
+
+.ao-font-overweight {
+  font-size: 1.25em; }
+
+.ao-font-large {
+  font-size: 1.5em; }
+
+.ao-font-massive {
+  font-size: 1.75em; }
+
+/* _effects partial */
+/* include more specifc contents after generic, so can override locally */
 /* _navbars partial */
 /* core style rules */
 html, body {
@@ -16,23 +82,27 @@ html, body {
 /* scroll hide/show, controlled by classes nav-up & nav-down */
 .ao-nav {
   position: fixed;
-  /* center the element (horizontally) */
+  /* center the fixed element (horizontally) */
   right: 0;
   left: 0;
   margin-right: auto;
   margin-left: auto;
   /* position & dimensions */
   height: 100px;
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
   /* style */
-  background-color: #ffffff;
+  background-color: #303538;
   opacity: 1;
   z-index: 999;
   -webkit-transition: top 0.8s ease;
   transition: top 0.8s ease;
-  /* experimental */
-  border-radius: 15px; }
+  /* experimental */ }
+
+/* center the nested element (within fixed nav) */
+.ao-nav-center {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px; }
 
 /* alternative IE9+ (replace when drop IE8 support) */
 .ao-nav2 {
@@ -53,9 +123,6 @@ html, body {
   /*background-color: lightpink; !* RWD tests *!*/
   -webkit-transition: top 0.8s ease;
   transition: top 0.8s ease; }
-
-.ao-nav-contacts {
-  background-color: #303538; }
 
 .ao-nav .logo {
   float: left;
@@ -117,7 +184,7 @@ html, body {
   margin-right: 15px;
   width: 140px;
   border-radius: 0 0 15px 15px;
-  background-color: #fff; }
+  background-color: #303538; }
 
 /* nav containers (mobile) */
 .ao-nav .ao-hamburger-nav nav {
@@ -165,7 +232,8 @@ html, body {
   width: 100%;
   background-color: #303538;
   -webkit-transition: top 0.8s ease;
-  transition: top 0.8s ease; }
+  transition: top 0.8s ease;
+  z-index: 999; }
 
 .ao-footer ul {
   display: inline-block;
@@ -200,34 +268,109 @@ html, body {
 
   .ao-nav .ao-header-hamburger {
     display: inline-block; } }
-/* remove mobile menu */
+/* remove mobile nav menu */
 @media screen and (min-width: 768px) {
   #mobile-nav {
     display: none; } }
-/* header & footer ul - responsive font sizes */
+/* header & footer ul - font sizes */
 @media screen and (max-width: 850px) {
-  .ao-nav .ao-header-ul {
-    font-size: 0.9em; } }
+  .ao-nav .ao-header-ul li {
+    font-size: 1.2em; }
+
+  .ao-nav .ao-footer-ul li {
+    font-size: 1.2em; } }
 /* iphone/mobile */
 @media screen and (max-width: 550px) {
-  .ao-footer .ao-footer-ul {
-    font-size: 0.8em; } }
+  .ao-footer .ao-footer-ul li {
+    font-size: 0.9em;
+    margin-right: 0px;
+    margin-left: 8px; }
+
+  .ao-footer p {
+    font-size: 0.8em; }
+
+  /* change centering classes to 95% */
+  .ao-center-page-80 {
+    width: 95%; }
+
+  .ao-center-page-90 {
+    width: 95%; }
+
+  .ao-nav .logo-text {
+    top: 32px;
+    font-size: 1.9em; }
+
+  .ao-nav .logo {
+    height: 65px;
+    width: 65px;
+    margin-top: 16px; }
+
+  .ao-nav .logo-text {
+    top: 32px;
+    font-size: 1.6em; } }
 /* widescreen - boost size */
 @media screen and (min-width: 1200px) {
-  .ao-nav .ao-header-ul {
-    font-size: 1.1em; } }
-/* _contents partial */
-/* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
-/* fonts */
-/* colours */
+  .ao-nav .ao-header-ul li {
+    font-size: 1.6em; }
+
+  .ao-nav .ao-header-ul li {
+    font-size: 1.6em; } }
+/**********************
+ *   about partial    *
+ **********************/
 .ao-carousel {
   height: 100%;
-  min-height: 100%;
-  background-color: pink; }
+  min-height: 100%; }
+
+#bg-carousel-container {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -1;
+  opacity: 1;
+  -webkit-transition: opacity 1.2s ease;
+  transition: opacity 1.2s ease; }
+
+#bg-carousel-container img {
+  position: absolute;
+  opacity: 0.74;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
+
+/*************************
+ *   contacts partial    *
+ *************************/
+#bg-contacts-container {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%; }
+
+#bg-contacts-container img {
+  position: absolute;
+  opacity: 0.25;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
 
 /* contacts.html page */
 .container-fluid-contacts {
   background-color: #303538; }
+
+.container-fluid-contacts .ao-nav, .container-fluid-contacts .ao-nav .ao-hamburger-nav {
+  background-color: transparent; }
 
 .ao-contacts {
   position: fixed;
@@ -238,8 +381,7 @@ html, body {
   -ms-transform: translateY(-50%), translateX(-50%);
   -o-transform: translateY(-50%), translateX(-50%);
   transform: translateY(-50%), translateX(-50%);
-  color: #A7A7A7;
-  background-color: #303538; }
+  color: #A7A7A7; }
 
 .ao-contacts p {
   margin-bottom: 30px;
@@ -276,75 +418,5 @@ html, body {
 
   .ao-contacts span {
     font-size: 0.8em; } }
-/* _utils partial */
-/* ao helper classes */
-/* export from theme design:	#FBCBA2	#F9B074 #F79646	- #4BACC6	#78C1D4	#A5D5E3 - #929292	#A7A7A7 - Footer/Modals #303538*/
-/* fonts */
-/* colours */
-/* bootstrap .clearfix or... */
-#ao-clearfix:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0; }
-
-/* ao default style */
-.ao-font-family {
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif' !important; }
-
-/* full page height (spash screen) */
-.ao-fill {
-  height: 100%;
-  min-height: 100%; }
-
-.ao-hr {
-  height: 1px;
-  background-color: #F79646; }
-
-/* centering styles */
-.ao-center-page-80 {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px; }
-
-.ao-center-page-90 {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 1200px; }
-
-.col-centered {
-  margin: 0 auto; }
-
-.col-centered2 {
-  text-align: center; }
-
-.col-centered3 {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center; }
-
-/* font sizes */
-.ao-font-small {
-  font-size: 0.8em; }
-
-.ao-font-nornal {
-  font-size: 1em; }
-
-.ao-font-big {
-  font-size: 1.15em; }
-
-.ao-font-overweight {
-  font-size: 1.25em; }
-
-.ao-font-large {
-  font-size: 1.5em; }
-
-.ao-font-massive {
-  font-size: 1.75em; }
-
-/* _effects partial */
 
 /*# sourceMappingURL=ao.css.map */

@@ -30,15 +30,10 @@
 }
 
 /* centering styles */
-.ao-center-page-80 {
-  margin: 0 auto;
-  width: 80%;
-  max-width: 1200px;
-}
 
-.ao-center-page-90 {
+.ao-center-page {
   margin: 0 auto;
-  width: 90%;
+  width: 95%;
   max-width: 1200px;
 }
 
@@ -61,7 +56,7 @@
 .ao-font-small {
   font-size: 0.8em;
 }
-.ao-font-nornal {
+.ao-font-normal {
   font-size: 1em;
 }
 .ao-font-big {

@@ -12,23 +12,30 @@ html, body {
 /* ao header */   /* scroll hide/show, controlled by classes nav-up & nav-down */
 .ao-nav {
   position: fixed;
-  /* center the element (horizontally) */
+  /* center the fixed element (horizontally) */
   right: 0;
   left: 0;
   margin-right: auto;
   margin-left: auto;
   /* position & dimensions */
   height: 100px;
-  width: 95%;
-  max-width: 1200px;
+  width: 100%;
+  //max-width: 1200px;
   /* style */
-  background-color: #ffffff;
+  background-color: #303538;
   opacity: 1;
   z-index: 999;
   -webkit-transition: top 0.8s ease;
   transition: top 0.8s ease;
   /* experimental */
-  border-radius:15px;
+  //border-radius:0 0 15px 15px;
+}
+
+/* center the nested element (within fixed nav) */
+.ao-nav-center {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1200px;
 }
 
 /* alternative IE9+ (replace when drop IE8 support) */
@@ -52,10 +59,6 @@ html, body {
   transition: top 0.8s ease;
 }
 
-.ao-nav-contacts {
-  background-color: $ao-the-new-black;
-}
-
 .ao-nav .logo {
   float: left;
   height: 85px;
@@ -71,7 +74,7 @@ html, body {
   font-size: 2.2em;
   font-style: italic;
   font-weight: 700;
-  color: #4BACC6;
+  color: $ao-blue-dark;
 }
 
 /* inital Logo letters */
@@ -91,7 +94,7 @@ html, body {
   display: inline;
   margin-left: 18px;
   font-size: 1.4em;
-  color: #4BACC6;
+  color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
 }
@@ -103,13 +106,13 @@ html, body {
 
 /* active nav item */
 .ao-nav li.active {
-  //border-bottom: solid 0.5px #4BACC6;
+  //border-bottom: solid 0.5px $ao-blue-dark;
   text-decoration: underline;
 }
 
 /* override Bootstrap anchor style */
 .ao-nav a {
-  color: #4BACC6;
+color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
   text-decoration: none;
@@ -125,7 +128,7 @@ html, body {
   margin-right: 15px;
   width: 140px;
   border-radius: 0 0 15px 15px;
-  background-color: #fff;
+  background-color: #303538;
 }
 
 /* nav containers (mobile) */
@@ -144,13 +147,10 @@ html, body {
   display: block;
   margin-left: 36px;
   font-size: 1.2em;
-  color: #4BACC6;
+  color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
 }
-
-
-
 
 
 
@@ -168,7 +168,7 @@ html, body {
 
 /* header & footer list item hover */
 .ao-nav a:hover, .ao-footer a:hover, .ao-nav .ao-header-hamburger li:hover {
-  color: #F79646;
+  color: $ao-orange-dark;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
   text-decoration: none;
@@ -189,6 +189,7 @@ html, body {
   background-color: $ao-the-new-black;
   -webkit-transition: top 0.8s ease;
   transition: top 0.8s ease;
+  z-index: 999;
 }
 
 .ao-footer ul {
@@ -201,14 +202,14 @@ html, body {
   display: inline;
   margin-right: 18px;
   font-size: 1.4em;
-  color: #4BACC6;
+  color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
 }
 
 /* override Bootstrap anchor style */
 .ao-footer a {
-  color: #4BACC6;
+  color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
   text-decoration: none;
@@ -232,29 +233,65 @@ html, body {
     display: inline-block;
   }
 }
-/* remove mobile menu */
+/* remove mobile nav menu */
 @media screen and (min-width: 768px) {
   #mobile-nav {
     display: none;
   }
 }
 
-/* header & footer ul - responsive font sizes */
+
+
+/* header & footer ul - font sizes */
 @media screen and (max-width: 850px) {
-  .ao-nav .ao-header-ul {
-    font-size: 0.9em;
+  .ao-nav .ao-header-ul li {
+    font-size: 1.2em;
+  }
+  .ao-nav .ao-footer-ul li {
+    font-size: 1.2em;
   }
 }
 /* iphone/mobile */
 @media screen and (max-width: 550px) {
-  .ao-footer .ao-footer-ul {
-    font-size: 0.8em;
+  .ao-footer .ao-footer-ul li {
+    font-size: 0.9em;
+    margin-right: 0px;
+    margin-left: 8px;
   }
+  .ao-footer p {
+    font-size:0.8em;
+  }
+
+  /* change centering classes to 95% */
+  .ao-center-page-80 {
+    width: 95%;
+  }
+  .ao-center-page-90 {
+    width: 95%;
+  }
+  .ao-nav .logo-text {
+    top: 32px;
+    font-size: 1.9em;
+  }
+  .ao-nav .logo {
+    height: 65px;
+    width: 65px;
+    margin-top: 16px;
+  }
+  .ao-nav .logo-text {
+    top: 32px;
+    font-size: 1.6em;
+  }
+
 }
+
 
 /* widescreen - boost size */
 @media screen and (min-width: 1200px) {
-  .ao-nav .ao-header-ul {
-    font-size: 1.1em;
+  .ao-nav .ao-header-ul li {
+    font-size: 1.6em;
+  }
+  .ao-nav .ao-header-ul li {
+    font-size: 1.6em;
   }
 }
