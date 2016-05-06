@@ -54,7 +54,7 @@
   <div class="container-fluid container-fluid-index ao-fill ao-font-family">
 
 
-    <div class="row" style="background-color: #303538;">
+    <div class="row">
       <header class="ao-nav nav-down">
         <div class="ao-nav-center">
 
@@ -103,13 +103,11 @@
 
 
     <!-- Splash -->
-    <div class="row ao-fill ao-splash">
-
+    <section class="row ao-fill ao-splash">
       <div class="ao-center-page ao-fill">
         <!--<div id="container" class="ao-fill">-->
 
            <div class="col-xs-12 ao-fill">
-
              <div id="bg-splash-container">
                <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
              </div>
@@ -117,7 +115,7 @@
 
         <!--</div>-->
       </div>
-    </div>
+    </section>
 
     <!-- *************************************************** -->
     <!-- * remove inline styles once prototyping complete  * -->
@@ -131,23 +129,33 @@
         <div class="col-xs-12">
           <h1>About Me</h1>
 
-          <!-- content panes -->
-          <div class="row">
-            <div class="col-xs-12 col-sm-4">
 
+          <!-- content panes -->
+          <div class="row" id="about-info-container">
+
+            <div class="col-xs-12 col-sm-4 ao-col1">
                 <div class="ao-portrait">
                   <img src="assets/img/Steve2.png" >
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-4">
-              <p>Right pane: What I Do  - Full Stack 20 years... </p>
-              <i>bottom pc-mobile image - blue</i>
+
+            <div class="col-xs-12 col-sm-4 ao-col2" >
+
+                <p><span class="ao-font-overweight">O</span>ver 21 years commercial experience, spanning multiple tech paradigm shifts..
+                   Have skills across the full stack, with preference front-end design & dev.
+                </p>
+
+              <div class="ao-pc-mobile">
+                <img id="pc-mobile-img" src="assets/img/pc-mobile-blue.png" >
+              </div>
+
             </div>
-            <div class="col-xs-12 col-sm-4">
-              <p>Right pane: My Passions  - tech, music, sport</p>
-              <i>bottom music image - blue</i>
+            <div class="col-xs-12 col-sm-4 ao-col3">
+              <p><span class="ao-font-overweight">M</span>y other passion is music composition & production.
+                Built up a home studio based around Apples Logic Pro X, Kontakt <i>(samlper)</i>, Komplete & Access Virus <i>(synth)</i>.
+              </p>
             </div>
-          </p>
+          </div>
 
         </div>
       </div>
@@ -158,8 +166,8 @@
 
 
     <!-- Skills -->
-    <div class="row">
-      <div class="ao-tail ao-center-page"
+    <section class="row ao-skills">
+      <div class="ao-center-page"
            style="height: 600px;">
 
         <!-- section Title -->
@@ -187,7 +195,7 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
 
 
@@ -195,34 +203,33 @@
 
 
     <!-- Design -->
-    <div class="row" style="color: white;">
-      <div class="ao-design ao-center-page-100 ao-font-big" style="height:500px;">
+    <section class="row ao-design">
+      <div class="ao-center-page">
 
         <div class="col-xs-12">
-          <h1 style="color: white;"><i><b>Design</b></i></h1>
-          <div class="row" style="background-color: white;">
-            <div class="col-xs-12 col-sm-6" style="padding:3%">
-              <br>
-              <P><span style="font-size:1.3em;">B</span>est design book i have read is Responsive Web Design (E.Marcotte),
-                its concise and engaging to read.  Certainly helped me understand the thoery behind RWD.</P>
+          <h1>Design</h1>
 
-              <p><span style="font-size:1.3em;">T</span>o re-sample, create logos & edit images, i use the GIMP (open-source image editor)
-                <a target="_blank" href="https://www.gimp.org/"><img class="img-wilber" src="assets/img/wilber-gimps_mascot-100.png" alt=“AO”
-                  height="50px" width="60px" style="float:left;"/></a>
-                its an exceptional example of what community can achieve... bye photoshop, hello
-                Wilber. (mascot)</p>
+          <div class="row">
+            <div class="col-xs-12 col-sm-7 ao-col-align">
 
+              <div class="ao-design-container">
+                <p><span class="ao-font-overweight">B</span>est design book have read is Responsive Web Design (E.Marcotte),
+                  Concise & engaging, helped me understand thoery behind RWD.</p>
 
-                <p><span style="font-size:1.3em;">F</span>or audio sound design, I have a home studio based around
-                Apple Logic Pro X, Kontakt samlper, Komplete suite & Access Virus synth.</p>
+                <p><span class="ao-font-overweight"">F</span>or re-sampling, editing & logos, i now use open source GIMP.
+                  <a target="_blank" href="https://www.gimp.org/">
+                    <img class="img-wilber" src="assets/img/wilber-gimps_mascot-100.png" alt=“AO” >
+                    </a>
+                  exceptional example of what community can achieve... bye photoshop, hello
+                  Wilber. (mascot)</p>
 
-
+                <p><span class="ao-font-overweight"">A</span>udio sound design, I have covered in my home studio.</p>
+              </div>
             </div>
-            <div class="col-xs-12 col-sm-6">  <!-- center-block -->
-              <span style="margin-bottom: 4px; color: #929292; font-size:1.2em;">Theme & palette for AudioOrange.com </span>
-
-              <div><img class="img-theme" src="assets/img/Theme-AudioOrange.png" alt=“AO”
-                         style="max-width:100%; margin-bottom: 20px; border:2px solid #4BACC6;"/>
+            <div class="col-xs-12 col-sm-5 ao-col-align">
+              <!--<p><span class="ao-font-overweight">T</span>heme & palette for AudioOrange.com</p>-->
+              <div class="ao-theme-container">
+                <img src="assets/img/Theme-AudioOrange-400.png" >
               </div>
             </div>
           </div>
@@ -230,13 +237,13 @@
         </div>
 
       </div>
-    </div>
+    </section>
 
 
 
     <!-- Develop -->
-    <div class="row">
-      <div class="ao-tail ao-center-page"
+    <div class="row ao-develop">
+      <div class="ao-center-page"
            style="height: 500px;">
 
         <!-- section Title -->
@@ -258,9 +265,9 @@
 
 
     <!-- Build -->
-    <div class="row" >
-      <div class="ao-tail ao-center-page"
-           style="background-color: or; opacity: 0.75; height: 500px;">
+    <div class="row ao-build" >
+      <div class="ao-center-page"
+           style=" opacity: 0.75; height: 500px;">
 
         <!-- section Title -->
         <div class="col-xs-12">

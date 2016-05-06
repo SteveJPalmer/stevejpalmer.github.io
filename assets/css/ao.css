@@ -379,7 +379,7 @@ section i {
   /* can switch to transparent boarder */ }
 
 /* given up trying to get the background image respondsive.. */
-/* container for image for aligning */
+/* container to align portrait image */
 .ao-portrait {
   width: 90%;
   height: 90%;
@@ -398,8 +398,47 @@ section i {
 .ao-portrait img:hover {
   border: solid 3px #F79646; }
 
+.ao-pc-mobile {
+  width: 90%;
+  height: 90%;
+  margin-bottom: 15px; }
+
+.ao-pc-mobile img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%; }
+
 /* Skills */
 /* Design */
+.ao-design {
+  background-color: white; }
+
+.ao-design-container {
+  margin: 10px 15px 30px 15px; }
+
+.ao-theme-container {
+  margin: 0 20px 15px 20px; }
+
+.ao-theme-container img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  border: solid 1px #4BACC6; }
+
+.ao-theme img:hover {
+  border: solid 1px #F79646; }
+
+.ao-design .img-wilber {
+  height: 50px;
+  width: 60px;
+  float: left; }
+
 /* Dev */
 /* Build */
 /* spacer */

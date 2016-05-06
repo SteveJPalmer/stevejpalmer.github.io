@@ -59,6 +59,19 @@ function toggleMobileMenu() {
 
 
 
+/* toggles pc-mobile image when hover */
+$(function () {
+
+  $('#pc-mobile-img').hover(function () {
+    this.src = 'assets/img/pc-mobile-orange.png';
+  }, function () {
+    this.src = 'assets/img/pc-mobile-blue.png';
+  });
+
+});
+
+
+
 /* --------
     parked
    --------*/

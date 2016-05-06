@@ -72,14 +72,9 @@ section i {
   background-color: #fff;   /* can switch to transparent boarder */
 }
 
-.ao-info-container {
-  //height: 400px;
-  //background-color: #fff ;
-}
-
 /* given up trying to get the background image respondsive.. */
 
-/* container for image for aligning */
+/* container to align portrait image */
 .ao-portrait {
   width: 90%;
   height: 90%;
@@ -101,20 +96,63 @@ section i {
   border: solid 3px $ao-orange-dark;
 }
 
+.ao-pc-mobile {
+  width: 90%;
+  height: 90%;
+  margin-bottom: 15px;
+}
+
+.ao-pc-mobile img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+}
+
 
 
 /* Skills */
 
 
 
+
+
+
+
 /* Design */
 .ao-design {
-  //background-color: #fff;
+  background-color: white;
 }
 
 .ao-design-container {
-  //height: 600px;
-  //background-color: transparent;
+  margin: 10px 15px 30px 15px;
+}
+
+.ao-theme-container {
+  margin: 0 20px 15px 20px;
+}
+
+.ao-theme-container img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  //max-height: 250px;
+  border: solid 1px $ao-blue-dark;
+}
+
+.ao-theme img:hover {
+  border: solid 1px $ao-orange-dark;
+}
+
+.ao-design .img-wilber {
+  height: 50px;
+  width: 60px;
+  float: left;
 }
 
 /* Dev */
@@ -127,3 +165,5 @@ section i {
 .ao-spacer {
   background-color: transparent;
 }
+
+
