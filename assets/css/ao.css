@@ -411,6 +411,19 @@ section i {
   /* respond */
   max-width: 100%; }
 
+.ao-notes {
+  width: 85%;
+  height: 85%;
+  margin: auto auto; }
+
+.ao-notes img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%; }
+
 /* Skills */
 /* Design */
 .ao-design {

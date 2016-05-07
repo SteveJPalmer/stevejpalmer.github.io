@@ -70,6 +70,17 @@ $(function () {
 
 });
 
+/* toggles notes image when hover */
+$(function () {
+
+  $('#notes-img').hover(function () {
+    this.src = 'assets/img/music-orange-400.png';
+  }, function () {
+    this.src = 'assets/img/music-blue-400.png';
+  });
+
+});
+
 
 
 /* --------
