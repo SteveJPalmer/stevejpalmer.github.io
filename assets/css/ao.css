@@ -19,7 +19,7 @@
 
 /* ao default style */
 .ao-font-family {
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif' !important; }
+  font-family: Georgia, "Times New Roman", Times, serif !important; }
 
 /* full page height (spash screen) */
 .ao-fill {
@@ -79,10 +79,6 @@
 html, body {
   height: 100%; }
 
-.body {
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif';
-  /*font-family: Georgia, "Times New Roman", Times, serif; */ }
-
 /* ao header */
 /* scroll hide/show, controlled by classes nav-up & nav-down */
 .ao-nav {
@@ -95,6 +91,7 @@ html, body {
   /* position & dimensions */
   height: 100px;
   width: 100%;
+  max-width: 1200px;
   /* style */
   background-color: #303538;
   opacity: 1;
@@ -105,9 +102,7 @@ html, body {
 
 /* center the nested element (within fixed nav) */
 .ao-nav-center {
-  margin: 0 auto;
-  width: 95%;
-  max-width: 1200px; }
+  margin: 0 auto; }
 
 /* alternative IE9+ (replace when drop IE8 support) */
 .ao-nav2 {
@@ -139,7 +134,7 @@ html, body {
   position: relative;
   left: 1%;
   top: 28px;
-  font-family: 'font-family: Georgia, "Times New Roman", Times, serif';
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 2.2em;
   font-style: italic;
   font-weight: 700;
@@ -336,7 +331,8 @@ section h1 {
   color: #303538;
   font-size: 36px;
   font-style: italic;
-  font-weight: 700; }
+  font-weight: 700;
+  padding: 10px 0 10px 0; }
 
 section p {
   color: #808080;
@@ -378,12 +374,11 @@ section i {
   background-color: #fff;
   /* can switch to transparent boarder */ }
 
-/* given up trying to get the background image respondsive.. */
 /* container to align portrait image */
 .ao-portrait {
   width: 90%;
   height: 90%;
-  margin: 15px 0px 30px 0px; }
+  padding: 15px 0px 30px 0px; }
 
 .ao-portrait img {
   /* center align */
@@ -401,7 +396,7 @@ section i {
 .ao-pc-mobile {
   width: 90%;
   height: 90%;
-  margin-bottom: 15px; }
+  padding-bottom: 30px; }
 
 .ao-pc-mobile img {
   /* center align */
@@ -409,12 +404,14 @@ section i {
   margin-left: auto;
   margin-right: auto;
   /* respond */
-  max-width: 100%; }
+  max-width: 100%;
+  padding-top: 10px; }
 
 .ao-notes {
   width: 85%;
   height: 85%;
-  margin: auto auto; }
+  margin: 0 auto;
+  padding-bottom: 30px; }
 
 .ao-notes img {
   /* center align */
@@ -425,11 +422,42 @@ section i {
   max-width: 100%; }
 
 /* Skills */
+.ao-skills {
+  background-color: #fff;
+  padding-top: 15px; }
+
+.ao-skills-container {
+  border-top: solid 2px #A7A7A7; }
+
+.progress {
+  background: #CCC;
+  border: 1px solid #C3C3C3;
+  border-radius: 6px;
+  height: 25px; }
+
+.progress-bar {
+  background: #F79646;
+  background: -webkit-linear-gradient(top, #ffffff 0%, #F79646 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #F79646 100%); }
+
+.progress-bar p {
+  color: #303538;
+  padding-left: 25px;
+  padding-top: 2px; }
+
+.ao-skills-container .ao-col1, .ao-skills-container .ao-col2 {
+  padding-bottom: 30px; }
+
 /* Design */
 .ao-design {
-  background-color: white; }
+  background-color: transparent; }
+
+.ao-design h1 {
+  background-color: transparent;
+  color: #fff; }
 
 .ao-design-container {
+  background-color: #fff;
   margin: 10px 15px 30px 15px; }
 
 .ao-theme-container {
@@ -456,6 +484,9 @@ section i {
 /* Build */
 /* spacer */
 .ao-spacer {
+  background-color: white; }
+
+.ao-spacer-transparent {
   background-color: transparent; }
 
 /*************************
