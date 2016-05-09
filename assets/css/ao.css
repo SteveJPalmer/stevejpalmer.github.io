@@ -467,6 +467,44 @@ section i {
   width: 80px;
   height: 70px; }
 
+.ao-design-img {
+  padding-bottom: 30px;
+  max-width: 90%; }
+
+#design-img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  padding-top: 10px; }
+
+.ao-develop-img {
+  padding-bottom: 50px;
+  max-width: 100%; }
+
+#develop-img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  padding-top: 10px; }
+
+.ao-build-img {
+  padding-bottom: 20px;
+  max-width: 85%; }
+
+#build-img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%; }
+
 /* iii */
 .ao-iii {
   position: relative;
