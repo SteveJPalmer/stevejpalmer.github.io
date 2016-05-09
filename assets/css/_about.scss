@@ -140,8 +140,6 @@ section i {
 
 .progress {
   background: #CCC;
-  //background: -webkit-linear-gradient(top, #ffffff 0%, #C3C3C3 100%);
-  //background: linear-gradient(to bottom,  #ffffff 0%, #C3C3C3 100%);
   border: 1px solid #C3C3C3;
   border-radius: 6px;
   height: 25px;
@@ -167,49 +165,50 @@ section i {
 
 
 /* Design */
-.ao-design {
+.ao-design-headers {
   background-color: transparent;
+  margin-top: 180px;
+  padding-bottom: 10px;
 }
 
-.ao-design h1 {
-  background-color: transparent;
+.ao-design-headers h1 {
   color: #fff;
 }
 
-.ao-design-container {
+.ao-design {
   background-color: #fff;
-  margin: 10px 15px 30px 15px;
-}
-
-.ao-theme-container {
-  margin: 0 20px 15px 20px;
-}
-
-.ao-theme-container img {
-  /* center align */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* respond */
-  max-width: 100%;
-  //max-height: 250px;
-  border: solid 1px $ao-blue-dark;
-}
-
-.ao-theme img:hover {
-  border: solid 1px $ao-orange-dark;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .ao-design .img-wilber {
-  height: 50px;
-  width: 60px;
   float: left;
+  width: 80px;
+  height: 70px;
 }
 
-/* Dev */
 
 
-/* Build */
+/* iii */
+.ao-iii{
+  position: relative;
+  background-color: white;
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease;
+  min-width: 100%;
+}
+
+.ao-iii:hover {
+  background-color: $ao-blue-dark;
+  -webkit-transition: background-color 4s ease;
+  transition: background-color 4s ease;
+}
+
+.ao-iii img{
+  max-width: 100%;
+  min-width: 100%;
+  opacity: 0.6;
+}
 
 
 /* spacer */

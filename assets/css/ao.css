@@ -449,39 +449,42 @@ section i {
   padding-bottom: 30px; }
 
 /* Design */
-.ao-design {
-  background-color: transparent; }
-
-.ao-design h1 {
+.ao-design-headers {
   background-color: transparent;
+  margin-top: 180px;
+  padding-bottom: 10px; }
+
+.ao-design-headers h1 {
   color: #fff; }
 
-.ao-design-container {
+.ao-design {
   background-color: #fff;
-  margin: 10px 15px 30px 15px; }
-
-.ao-theme-container {
-  margin: 0 20px 15px 20px; }
-
-.ao-theme-container img {
-  /* center align */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /* respond */
-  max-width: 100%;
-  border: solid 1px #4BACC6; }
-
-.ao-theme img:hover {
-  border: solid 1px #F79646; }
+  padding-top: 20px;
+  padding-bottom: 30px; }
 
 .ao-design .img-wilber {
-  height: 50px;
-  width: 60px;
-  float: left; }
+  float: left;
+  width: 80px;
+  height: 70px; }
 
-/* Dev */
-/* Build */
+/* iii */
+.ao-iii {
+  position: relative;
+  background-color: white;
+  -webkit-transition: background-color 3s ease;
+  transition: background-color 3s ease;
+  min-width: 100%; }
+
+.ao-iii:hover {
+  background-color: #4BACC6;
+  -webkit-transition: background-color 4s ease;
+  transition: background-color 4s ease; }
+
+.ao-iii img {
+  max-width: 100%;
+  min-width: 100%;
+  opacity: 0.6; }
+
 /* spacer */
 .ao-spacer {
   background-color: white; }
