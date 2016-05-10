@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>AudioOrange</title>
-		<meta name="description" content="AudioOrange Website">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>AudioOrange</title>
+    <meta name="description" content="AudioOrange Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/vendor/normalize.css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <!--switch to local for dev - so code completion sees bootstrap classes -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/ao.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+
 
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -36,60 +38,63 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-
   </head>
   <!-- 'font-family: Georgia, "Times New Roman", Times, serif;' -->
   <body>
 
-  <div id="bg-contacts-container">
+
+
+  <div id="bg-contacts-container" class="animated fadeIn">
     <img src="assets/img/guitar2-800.jpg" id="bg-contacts" alt="">
   </div>
 
 
+
   <div class="container-fluid container-fluid-contacts ao-fill ao-font-family">
+
 
     <div class="row">
       <header class="ao-nav nav-down">
         <div class="ao-nav-center">
 
           <div class="col-xs-12">
-          <a href="index.html">
-            <img class="logo" src="assets/img/ao-logo.png" alt=“AO” />
-          </a>
-          <span class="logo-text"><span>A</span>udio<span>O</span>range</span>
-          <nav>
-            <ul class="ao-header-ul">
-              <li><a href="index.html">About</a></li>
-              <li><a href="showcase.html">Showcase</a></li>
-              <li><a href="media.html">Media</a></li>
-              <li class="active"><a href="contact.html">Contact</a></li>
-              <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
-                <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
-              </a></li>
-              <li class="edge"><a target="_blank" href="https://github.com/SteveJPalmer">
-                <span class="fa fa-github ao-font-large fa-1x" aria-hidden="true"></span>
-              </a></li>
-            </ul>
-            <ul class="ao-header-hamburger">
-              <li class="edge" onclick="toggleMobileMenu();">
-                <span class="fa fa-bars ao-font-large fa-1x" aria-hidden="true"></span>
-              </li>
-            </ul>
-          </nav>
-          <!--mobile nav (show/hide) -->
-          <nav class="ao-hamburger-nav ao-nav-contactsao-hide" id="mobile-nav">
-            <div class="row ">
-              <div class="col-xs-12 ao-nav-contacts">
-                <ul class="ao-header-ul-mobile">
-                  <li><a href="index.html">About</a></li>
-                  <li><a href="showcase.html">Showcase</a></li>
-                  <li><a href="media.html">Media</a></li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
+            <a href="index.html">
+              <img class="logo" src="assets/img/ao-logo.png" alt=“AO”/>
+            </a>
+            <span class="logo-text"><span>A</span>udio<span>O</span>range</span>
+            <nav>
+              <ul class="ao-header-ul">
+                <li><a href="index.html">About</a></li>
+                <li><a href="showcase.html">Showcase</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                  <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
+                </a></li>
+                <li class="edge"><a target="_blank" href="https://github.com/SteveJPalmer">
+                  <span class="fa fa-github ao-font-large fa-1x" aria-hidden="true"></span>
+                </a></li>
+              </ul>
+              <ul class="ao-header-hamburger">
+                <li class="edge" onclick="toggleMobileMenu();">
+                  <span class="fa fa-bars ao-font-large fa-1x" aria-hidden="true"></span>
+                </li>
+              </ul>
+            </nav>
+            <!--mobile nav (show/hide) -->
+            <nav class="ao-hamburger-nav ao-hide" id="mobile-nav">
+              <div class="row">
+                <div class="col-xs-12">
+                  <ul class="ao-header-ul-mobile">
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li class="active"><a href="contact.html">Contact</a></li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </nav>
-        </div>
+            </nav>
+          </div>
 
         </div>
       </header>

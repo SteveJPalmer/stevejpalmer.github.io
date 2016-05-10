@@ -9,11 +9,21 @@
   left: -50%;
   width: 200%;
   height: 200%;
+  /* animate.css properties */
+  -o-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  //-webkit-animation-delay: 0.5s;
+  -o-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
 
 #bg-contacts-container img {
   position: absolute;
-  opacity: 0.25;
+  opacity: 0.3;
   top: 0;
   left: 0;
   right: 0;

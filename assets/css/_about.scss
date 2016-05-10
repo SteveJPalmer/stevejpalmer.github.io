@@ -39,10 +39,8 @@ section i {
 
 /* splash page */
 .ao-splash {
-  height: 100%;
-  min-height: 100%;
-  //background-color: white;
-  //background-color: pink;
+  //height: 100%;
+  //min-height: 100%;
 }
 
 #bg-splash-container {
@@ -53,9 +51,21 @@ section i {
   height: 200%;
   z-index: -1;
   opacity: 1;
+  /* hue effect */
   -webkit-transition: opacity 1.2s ease;
   transition: opacity 1.2s ease;
+  /* animate.css properties */
+  -o-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  //-webkit-animation-delay: 0.5s;
+  -o-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
 }
+
 #bg-splash-container img {
   position: absolute;
   opacity: 0.74;
@@ -67,6 +77,63 @@ section i {
   min-width: 50%;
   min-height: 50%;
 }
+
+#headline-text {
+  position: relative;
+  //top: 40%;
+  //left: 35%;
+  //width: 30%;
+  margin: 200px auto;
+  color: #fff;
+  font-size: 5em;
+  font-style: italic;
+}
+
+#headline-row-2 {
+  font-size: 0.5em;
+}
+
+#headline-row-1 {
+  /* animate.css properties */
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  /* delay*/
+  -o-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#headline-row-2 {
+  /* animate.css properties */
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  /* delay*/
+  -o-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -webkit-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+}
+
+#headline-row-3 {
+  /* animate.css properties */
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  /* delay*/
+  -o-animation-delay: 0.95s;
+  -moz-animation-delay: 0.95s;
+  -webkit-animation-delay: 0.95s;
+  animation-delay: 0.95s;
+}
+
+
+
 
 /* info */
 .ao-info {
@@ -151,6 +218,12 @@ section i {
   background: $ao-orange-dark;
   background: -webkit-linear-gradient(top, #ffffff 0%, $ao-orange-dark 100%);
   background: linear-gradient(to bottom, #ffffff 0%, $ao-orange-dark 100%);
+}
+
+.progress-bar:hover {
+  background: $ao-orange-mid;
+  background: -webkit-linear-gradient(top, #ffffff 0%, $ao-orange-mid 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, $ao-orange-mid 100%);
 }
 
 .progress-bar p {
@@ -270,5 +343,21 @@ section i {
 .ao-spacer-transparent {
   background-color: transparent;
 }
+
+
+/* ----------------------
+   responsive adjustments
+   ---------------------- */
+
+/* jump to final img hover effect styles */
+@media screen and (max-width: 767px) {
+  body.about {
+    background-color: $ao-blue-dark;
+  }
+  .ao-iii {
+    background-color: $ao-blue-dark;
+  }
+}
+
 
 

@@ -10,12 +10,14 @@
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
 
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/vendor/normalize.css">
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">-->
     <!--switch to local for dev - so code completion sees bootstrap classes -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/ao.css">
+    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
+
 
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -104,16 +106,18 @@
 
     <!-- Splash -->
     <section class="row ao-fill ao-splash">
-      <div class="ao-center-page ao-fill">
-        <!--<div id="container" class="ao-fill">-->
+      <div>
+        <div id="headline-text">
+          <div id="headline-row-1" class="text-center animated zoomInDown"> Soundtrack</div>
+          <div id="headline-row-2" class="text-center animated zoomInDown"><span id="a">to </span><span id="b">the</span></div>
+          <div id="headline-row-3" class="text-center animated zoomInDown">Web</div>
+        </div>
 
-           <div class="col-xs-12 ao-fill">
-             <div id="bg-splash-container">
-               <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
-             </div>
-           </div>
-
-        <!--</div>-->
+        <div class="col-xs-12 ao-fill">
+          <div id="bg-splash-container" class="animated fadeIn">
+            <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
+          </div>
+        </div>
       </div>
     </section>
 
@@ -177,13 +181,13 @@
               <p><span class="ao-font-overweight">C</span>ommunication is one of my key strengths,
                 essential for conveying ideas at various abstraction levels to project members & stakeholders.
               </p>
-              <p><span class="ao-font-overweight">A</span>m keen to promote Quality'!
+              <p><span class="ao-font-overweight">A</span>m keen to promote Quality!
                 Was high priority at AT&T <i>(iso9001 etc..)</i> but with todays 'throw away app' mindset,
                 is too easly forgotten!
               </p>
               <p><span class="ao-font-overweight">I</span>ndeed, how things have changed...
                 When started as graduate trainee, office had just a single standalone internet machine!
-                - had to book 15min sessions <i>(think trying to book meeting rooms today!)</i>
+                - had to book 15min sessions <i>(aka booking a meeting room today!)</i>
               </p>
               <p><span class="ao-font-overweight">C</span>urrent focus area is Angular, Javascript & MEAN Stack,
                 within the mesmerizing supporting ecosystem..<i>
@@ -347,6 +351,8 @@
   </div>
 
   <script src="assets/js/ao.js"></script>
+  <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+
 </body>
 </html>
 

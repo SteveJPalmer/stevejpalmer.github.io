@@ -37,7 +37,7 @@ $(function () {
 
     // if scrolled down & past navbar, add class .nav-up.
     // (necessary so never see what is "behind" the navbar)
-    if (st > lastScrollTop && st > (navbarHeight + 180)) {
+    if (st > lastScrollTop && st > (navbarHeight -80)) {
       // Scroll Down
       $('header').removeClass('nav-down').addClass('nav-up');
       $('.ao-hamburger-nav').addClass('ao-hide');
