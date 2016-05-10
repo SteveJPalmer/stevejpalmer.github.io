@@ -79,11 +79,12 @@ section i {
 }
 
 #headline-text {
-  position: relative;
-  //top: 40%;
-  //left: 35%;
+  position: absolute;
+  top: 40%;
+  left: 35%;
   //width: 30%;
-  margin: 200px auto;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   font-size: 5em;
   font-style: italic;
@@ -357,7 +358,15 @@ section i {
   .ao-iii {
     background-color: $ao-blue-dark;
   }
+  #headline-text {
+    left: 25%;
+  }
 }
 
+@media screen and (max-width: 550px) {
+  #headline-text {
+    left: 5%;
+  }
+}
 
 

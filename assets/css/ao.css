@@ -371,8 +371,11 @@ section i {
   min-height: 50%; }
 
 #headline-text {
-  position: relative;
-  margin: 200px auto;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   font-size: 5em;
   font-style: italic; }
@@ -597,7 +600,13 @@ section i {
     background-color: #4BACC6; }
 
   .ao-iii {
-    background-color: #4BACC6; } }
+    background-color: #4BACC6; }
+
+  #headline-text {
+    left: 25%; } }
+@media screen and (max-width: 550px) {
+  #headline-text {
+    left: 5%; } }
 /*************************
  *   contacts partial    *
  *************************/
