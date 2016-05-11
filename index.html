@@ -108,29 +108,17 @@
       <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
     </div>
 
-    <div id="soundtrack-container" class="text-center">
-      <audio id="soundtrack" controls preload="auto" autoplay>
-        <source src="assets/audio/AudioOrange-Intro.mp3" type="audio/mp3">
-        <!--<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">-->
-        <!--<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">-->
-      </audio>
-    </div>
 
     <!--splash -->
     <section class="row ao-fill ao-splash">
         <div class="col-xs-12 ao-fill">
           <div id="headline-text">
-            <div id="headline-row-1" class="hide-end text-center animated zoomInDown"> Soundtrack</div>
-            <div id="headline-row-2" class="hide-end text-center animated zoomInDown"><span id="a">to </span><span id="b">the</span></div>
-            <div id="headline-row-3" class="hide-end text-center animated zoomInDown">Web</div>
-            <div id="headline-row-4" class="show-end text-center animated zoomIn">Imagine.</div>
-            <div id="headline-row-5" class="show-end text-center animated zoomIn" >Innovate..</div>
-            <div id="headline-row-6" class="show-end text-center animated zoomIn">Inspire...</div>
+            <div id="headline-row-1" class="hide-end text-center animated zoomInDown">Sound Design</div>
+            <div id="headline-row-2" class="hide-end text-center animated zoomInDown"><span id="a">and</span></div>
+            <div id="headline-row-3" class="hide-end text-center animated zoomInDown">Web Development</div>
           </div>
-
         </div>
     </section>
-
 
 
 
@@ -335,9 +323,11 @@
       <div class="ao-iii-container">
         <img src="assets/img/keys3c-1200.jpg">
         <div class="ao-iii-text-wrapper text-center" >
-          <span id="iii-text-1" class="ao-iii-text">Imagine... </span>
-          <span id="iii-text-2" class="ao-iii-text" >Innovate... </span>
-          <span id="iii-text-3" class="ao-iii-text">Inspire...</span>
+          <span id="iii-text-1" class="hide-end1 ao-iii-text">Imagine.</span>
+          <span id="iii-text-2" class="hide-end1 ao-iii-text">Innovate..</span>
+          <span id="iii-text-3" class="hide-end1 ao-iii-text">Inspire...</span>
+          <span id="iii-text-4" class="hide-end2 ao-iii-text">AudioOrange</span>
+          <div  id="iii-text-5" class="show-end1  ao-iii-text">Soundtracks for the Web</div>
         </div>
       </div>
     </section>
@@ -368,13 +358,13 @@
   </div>
 
   <!--audio jukebox-->
-  <!--<div id="background-music-container" class="text-center">-->
-    <!--<audio id="background-music">-->
-      <!--<source src="assets/audio/Dummy.mp3" type="audio/mp3">-->
-      <!--&lt;!&ndash;<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">&ndash;&gt;-->
-      <!--&lt;!&ndash;<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">&ndash;&gt;-->
-    <!--</audio>-->
-  <!--</div>-->
+  <div id="background-music-container" class="text-center">
+    <audio id="background-music">
+      <source src="assets/audio/AudioOrange-Intro.mp3" type="audio/mp3">
+      <!--<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">-->
+      <!--<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">-->
+    </audio>
+  </div>
 
 
   <script src="assets/js/ao.js"></script>
@@ -414,21 +404,25 @@
       });
 
 
-      //background music
+      //background music triggered on ii section
+      var inSession = false;
       var waypoint = new Waypoint({
-        element: document.getElementById('skills'),   //watch not js, no #
+        element: document.getElementById('iii'),   //watch not js, no #
         handler: function(direction) {
           if (direction == 'down') {
             console.log('You have scrolled down to skills');
             //trigger background music */
-            $('#background-music').trigger('load');
-            $('#background-music').trigger('play');
+            if (!inSession) {
+              $('#background-music').trigger('load');
+              $('#background-music').trigger('play');
+              inSession = true;
+            }
           }
           //else {
           //console.log('You have scrolled up to iii');
           //}
         },
-        offset: '100%'
+        offset: 'bottom-in-view'
       });
 
 
@@ -436,15 +430,22 @@
 
 
 
-    /* remove the headline text when animation completed */
     $(function () {
 
-      $('#headline-row-3').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+      /* remove iii items when third animation animation completes */
+      $('#iii-text-3').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
        function(e) {
         //code to execute after animation ends
 //         $('.headline-row').removeClass('zoomInDown').addClass('fadeOut');
-         $('.hide-end').fadeOut(2600);
+         $('.hide-end1').fadeOut(2000);
       });
+
+      /* remove iii items when fourth animation animation completes */
+      $('#iii-text-4').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+        function(e) {
+          //code to execute after animation ends
+          $('.hide-end2').fadeOut(2800);
+        });
 
     });
   </script>

@@ -73,23 +73,6 @@ section i {
   min-height: 50%;
 }
 
-#soundtrack-container {
-  /* display of audio control */
-  position: absolute;
-  //padding-top: 86px;
-  bottom: 30px;
-  width: 95%;
-  z-index: 999;
-}
-
-#soundtrack {
-  /* display of audio control */
-  margin: 0 auto;
-  opacity: 0.5;
-  //margin-right: 30px;
-
-}
-
 #headline-text {
   max-height: 100%;
   min-height: 100%;
@@ -116,58 +99,29 @@ section i {
 #headline-row-1 {
   /* animate.css properties */
   /* delay*/
-  -o-animation-delay: 2.3s;
-  -moz-animation-delay: 2.3s;
-  -webkit-animation-delay: 2.3s;
-  animation-delay: 2.3s;
+  -o-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
 
 #headline-row-2 {
   /* animate.css properties */
   /* delay*/
-  -o-animation-delay: 4.3s;
-  -moz-animation-delay: 4.3s;
-  -webkit-animation-delay: 4.3s;
-  animation-delay: 4.3s;
+  -o-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s;
 }
 
 #headline-row-3 {
   /* animate.css properties */
   /* delay*/
-  -o-animation-delay: 6.3s;
-  -moz-animation-delay: 6.3s;
-  -webkit-animation-delay: 6.3s;
-  animation-delay: 6.3s;
+  -o-animation-delay: 2.6s;
+  -moz-animation-delay: 2.6s;
+  -webkit-animation-delay: 2.6s;
+  animation-delay: 2.6s;
 }
-
-#headline-row-4 {
-  /* animate.css properties */
-  /* delay*/
-  -o-animation-delay: 12s;
-  -moz-animation-delay: 12s;
-  -webkit-animation-delay: 12s;
-  animation-delay: 12s;
-}
-
-#headline-row-5 {
-  /* animate.css properties */
-  /* delay*/
-  -o-animation-delay: 14s;
-  -moz-animation-delay: 14s;
-  -webkit-animation-delay: 14s;
-  animation-delay: 14s;
-}
-
-#headline-row-6 {
-  /* animate.css properties */
-  /* delay*/
-  -o-animation-delay: 16s;
-  -moz-animation-delay: 16s;
-  -webkit-animation-delay: 16s;
-  animation-delay: 16s;
-}
-
-
 
 /* info */
 .ao-info {
@@ -370,7 +324,7 @@ section i {
 .ao-iii-container {
   position: relative;
   color: #fff;
-  font-size: 4em;
+  font-size: 2.8em;
   font-style: italic;
   font-weight: 700;
 }
@@ -412,29 +366,59 @@ section i {
 #iii-text-1 {
   /* animate.css properties */
   /* delay */
-  -o-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -o-animation-delay: 3.75s;
+  -moz-animation-delay: 3.75s;
+  -webkit-animation-delay: 3.75s;
+  animation-delay: 3.75s;
 }
 
 #iii-text-2 {
   /* animate.css properties */
   /* delay */
-  -o-animation-delay: 2s;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
+  -o-animation-delay: 5.75s;
+  -moz-animation-delay: 5.75s;
+  -webkit-animation-delay: 5.75s;
+  animation-delay: 5.75s;
 }
 
 #iii-text-3 {
   /* animate.css properties */
   /* delay*/
-  -o-animation-delay: 3s;
-  -moz-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
+  -o-animation-delay: 7.75s;
+  -moz-animation-delay: 7.75s;
+  -webkit-animation-delay: 7.75s;
+  animation-delay: 7.75s;
 }
+
+#iii-text-4 {
+  color: $ao-orange-dark;
+  font-size: 1.25em;
+  /* animate.css properties */
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  /* delay*/
+  -o-animation-delay: 11.8s;
+  -moz-animation-delay: 11.8s;
+  -webkit-animation-delay: 11.8s;
+  animation-delay: 11.8s;
+}
+
+#iii-text-5 {
+  font-size: 1.25em;
+  /* animate.css properties */
+  -o-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+  /* delay*/
+  -o-animation-delay: 17.8s;
+  -moz-animation-delay: 17.8s;
+  -webkit-animation-delay: 17.8s;
+  animation-delay: 17.8s;
+}
+
 
 
 /* spacer */
@@ -466,7 +450,7 @@ section i {
     font-size: 4em;
   }
   .ao-iii-container {
-    font-size: 3em;
+    font-size: 1.9em;
   }
 }
 
@@ -477,7 +461,7 @@ section i {
     font-size: 3.5em;
   }
   .ao-iii-container {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 }
 
@@ -488,7 +472,7 @@ section i {
     font-size: 5.5em;
   }
   .ao-iii-container {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 }
 
