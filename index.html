@@ -103,29 +103,38 @@
       </header>
     </div>
 
+    <!-- main page background -->
+    <div id="bg-splash-container" class="animated fadeIn">
+      <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
+    </div>
 
-    <!-- Splash -->
+    <div id="soundtrack-container" class="text-center">
+      <audio id="soundtrack" controls preload="auto" autoplay>
+        <source src="assets/audio/AudioOrange-Intro.mp3" type="audio/mp3">
+        <!--<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">-->
+        <!--<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">-->
+      </audio>
+    </div>
+
+    <!-- splash -->
     <section class="row ao-fill ao-splash">
-      <div>
-        <div id="headline-text">
-          <div id="headline-row-1" class="text-center animated zoomInDown"> Soundtrack</div>
-          <div id="headline-row-2" class="text-center animated zoomInDown"><span id="a">to </span><span id="b">the</span></div>
-          <div id="headline-row-3" class="text-center animated zoomInDown">Web</div>
-        </div>
-
         <div class="col-xs-12 ao-fill">
-          <div id="bg-splash-container" class="animated fadeIn">
-            <img src="assets/img/keys1-1200.png" id="bg-splash" alt="">
+          <div id="headline-text">
+            <div id="headline-row-1" class="hide-end text-center animated zoomInDown"> Soundtrack</div>
+            <div id="headline-row-2" class="hide-end text-center animated zoomInDown"><span id="a">to </span><span id="b">the</span></div>
+            <div id="headline-row-3" class="hide-end text-center animated zoomInDown">Web</div>
+            <div id="headline-row-4" class="show-end text-center animated zoomIn">Imagine... </div>
+            <div id="headline-row-5" class="show-end text-center animated zoomIn" >Innovate... </div>
+            <div id="headline-row-6" class="show-end text-center animated zoomIn">Inspire...</div>
           </div>
+
         </div>
-      </div>
     </section>
 
-    <!-- *************************************************** -->
-    <!-- * remove inline styles once prototyping complete  * -->
-    <!-- *************************************************** -->
 
-    <!-- Info -->
+
+
+    <!-- info -->
     <section class="row ao-info">
       <div class="ao-info-container ao-center-page">
 
@@ -167,8 +176,8 @@
     </section>
 
 
-    <!-- Skills -->
-    <section class="row ao-skills">
+    <!-- skills -->
+    <section id="skills" class="row ao-skills">
       <div class="ao-skills-container ao-center-page">
 
         <!-- section Title -->
@@ -272,10 +281,10 @@
     </section>
 
 
-
+    <!-- design headers -->
     <div class="row ao-design-headers">
       <div class="ao-design-header-contaier ao-center-page">
-        <div class="row">
+        <div class="row text-center">
           <div class="col-xs-4 col-sm-4 ao-col1"><h1>Design</h1></div>
           <div class="col-xs-4 col-sm-4 ao-col2"><h1>Develop</h1></div>
           <div class="col-xs-4 col-sm-4 ao-col3"><h1>Build</h1></div>
@@ -283,6 +292,7 @@
       </div>
     </div>
 
+    <!-- design -->
     <section class="row ao-design">
       <div class="ao-design-contaier ao-center-page">
         <div class="row">
@@ -291,7 +301,7 @@
               <a target="_blank" href="https://www.gimp.org/">
                 <img class="img-wilber" src="assets/img/wilber-gimps_mascot-100.png" alt=“AO”>
               </a>
-              Exceptional example of what community can achieve... bye photoshop, hello
+              Exceptional example of what community can achieve... bye bye photoshop, hello
               Wilber <i>(mascot)</i>
             </p>
             <div class="ao-design-img">
@@ -308,9 +318,9 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 ao-col3">
-            <p class="text-center"><span class="ao-font-overweight">W</span>ebStorm rocks - "code completion at its finest" -
-              so many features now. Its integration with Dash worth the price alone!
-              Gulp does the rest nicely, with Atom for those quick file previews</p>
+            <p class="text-center"><span class="ao-font-overweight">W</span>ebStorm rocks - "code completion at its finest" &
+              so many features. Its integration with Dash worth price alone!
+              Gulp does the rest nicely & Atom for those quick file previews</p>
             <div class="ao-build-img">
               <img id="build-img" src="assets/img/Build.png" >
             </div>
@@ -320,9 +330,16 @@
     </section>
 
 
-    <!-- iii -->
-    <section class="row ao-iii">
-      <img src="assets/img/keys3b-1200.jpg" >
+    <!--iii -->
+    <section id="iii" class="row ao-iii">
+      <div class="ao-iii-container">
+        <img src="assets/img/keys3c-1200.jpg">
+        <div class="ao-iii-text-wrapper text-center" >
+          <span id="iii-text-1" class="ao-iii-text">Imagine... </span>
+          <span id="iii-text-2" class="ao-iii-text" >Innovate... </span>
+          <span id="iii-text-3" class="ao-iii-text">Inspire...</span>
+        </div>
+      </div>
     </section>
 
 
@@ -350,8 +367,87 @@
     </div>
   </div>
 
+  /* audio jukebox */
+  <div id="background-music-container" class="text-center">
+    <audio id="background-music">
+      <source src="assets/audio/Dummy.mp3" type="audio/mp3">
+      <!--<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">-->
+      <!--<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">-->
+    </audio>
+  </div>
+
+
   <script src="assets/js/ao.js"></script>
   <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+
+  <script>
+    /* waypoint page scripts */
+    $(function () {
+
+      //when scroll to iii section
+      var waypoint = new Waypoint({
+        element: document.getElementById('iii'),   //watch not js, no #
+        handler: function(direction) {
+          if (direction == 'down') {
+            //console.log('You have scrolled down to iii');
+            //add animate class
+            $('.ao-iii-text').addClass('animated zoomIn');
+          }
+          //else {
+            //console.log('You have scrolled up to iii');
+          //}
+        },
+        offset: 'bottom-in-view'
+      });
+
+      //reset iii section
+      var waypoint = new Waypoint({
+        element: document.getElementById('iii'),   //watch not js, no #
+        handler: function(direction) {
+          if (direction == 'up') {
+            //console.log('You have scrolled down to iii');
+            //add animate class
+            $('.ao-iii-text').removeClass('animated zoomIn');
+          }
+        },
+        offset: '100%'
+      });
+
+
+      //background music
+      var waypoint = new Waypoint({
+        element: document.getElementById('skills'),   //watch not js, no #
+        handler: function(direction) {
+          if (direction == 'down') {
+            console.log('You have scrolled down to skills');
+            //trigger background music */
+            $('#background-music').trigger('load');
+            $('#background-music').trigger('play');
+          }
+          //else {
+          //console.log('You have scrolled up to iii');
+          //}
+        },
+        offset: '100%'
+      });
+
+
+    });
+
+
+
+    /* remove the headline text when animation completed */
+    $(function () {
+
+      $('#headline-row-3').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
+       function(e) {
+        //code to execute after animation ends
+//         $('.headline-row').removeClass('zoomInDown').addClass('fadeOut');
+         $('.hide-end').fadeOut(2600);
+      });
+
+    });
+  </script>
 
 </body>
 </html>

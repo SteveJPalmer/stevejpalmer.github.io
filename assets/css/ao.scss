@@ -3,7 +3,6 @@
 /* import partials */
 @import '_variables.scss';
 @import '_utils.scss';
-@import '_effects.scss';
 
 /* include more specifc contents after generic, so can override locally */
 @import '_navbars.scss';

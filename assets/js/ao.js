@@ -17,12 +17,12 @@ $(function () {
   }, 250);    //Note: slow it right down to check throttling
 
   function hasScrolled() {
-    console.log('>>fn hasScrolled start');
+    // console.log('>>fn hasScrolled start');
     var st = $(this).scrollTop();
-    console.log('....scrollTop (st):' + st);
-    console.log('....lastScrollTop:' + lastScrollTop);
-    console.log('....window height' + $(window).height());
-    console.log('....document height' + $(document).height());
+    // console.log('....scrollTop (st):' + st);
+    // console.log('....lastScrollTop:' + lastScrollTop);
+    // console.log('....window height' + $(window).height());
+    // console.log('....document height' + $(document).height());
 
     // stop progress if not scrolled more than delta
     if (Math.abs(lastScrollTop - st) <= delta) {

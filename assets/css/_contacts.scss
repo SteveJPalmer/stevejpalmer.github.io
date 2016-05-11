@@ -23,7 +23,7 @@
 
 #bg-contacts-container img {
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.35   ;
   top: 0;
   left: 0;
   right: 0;
@@ -37,7 +37,6 @@
 .container-fluid-contacts {
   background-color: $ao-the-new-black;
 }
-
 
 
 /* contacts page will have transparent menu */
@@ -71,7 +70,7 @@
 
 /* override Bootstrap anchor style */
 .ao-contacts a {
-  color: $ao-grey-light;
+  color: #fff;
   -webkit-transition: color 1.5s ease;
   transition: color 2s ease;
   text-decoration: none;
