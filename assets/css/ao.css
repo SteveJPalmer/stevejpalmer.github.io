@@ -372,9 +372,9 @@ section i {
 #soundtrack-container {
   /* display of audio control */
   position: absolute;
-  padding-top: 86px;
-  width: 100%;
-  z-index: 1001; }
+  bottom: 30px;
+  width: 95%;
+  z-index: 999; }
 
 #soundtrack {
   /* display of audio control */
