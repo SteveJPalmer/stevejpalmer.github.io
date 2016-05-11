@@ -322,12 +322,16 @@
     <section id="iii" class="row ao-iii">
       <div class="ao-iii-container">
         <img src="assets/img/keys3c-1200.jpg">
-        <div class="ao-iii-text-wrapper text-center" >
+        <div class="ao-iii-text-wrapper b text-center" >
           <span id="iii-text-1" class="hide-end1 ao-iii-text">Imagine.</span>
           <span id="iii-text-2" class="hide-end1 ao-iii-text">Innovate..</span>
           <span id="iii-text-3" class="hide-end1 ao-iii-text">Inspire...</span>
-          <span id="iii-text-4" class="hide-end2 ao-iii-text">AudioOrange</span>
-          <div  id="iii-text-5" class="show-end1  ao-iii-text">Soundtracks for the Web</div>
+          <span id="iii-text-4" class="hide-end2 ao-iii-text">
+            <span class="ao-font-overweight">A</span>udio<span class="ao-font-overweight">O</span>range</span>
+          <div  id="iii-text-5" class="show-end1 ao-iii-text">Soundtracks for the Web</div>
+        </div>
+        <div id="iii-click" class="ao-iii-text-wrapper a text-center">
+           <span class="fa fa-play-circle fa-4x" aria-hidden="true"></span>
         </div>
       </div>
     </section>
@@ -357,9 +361,9 @@
     </div>
   </div>
 
-  <!--audio jukebox-->
+  <!-- audio -->
   <div id="background-music-container" class="text-center">
-    <audio id="background-music">
+    <audio id="background-music" preload="auto">
       <source src="assets/audio/AudioOrange-Intro.mp3" type="audio/mp3">
       <!--<source src="assets/audio/AudioOrange-Intro.ogg" type="audio/ogg">-->
       <!--<source src="assets/audio/AudioOrange-Intro.webm" type="audio/webm">-->
@@ -372,8 +376,11 @@
 
   <script>
     /* waypoint page scripts */
-    $(function () {
 
+  /* WAYPOINTS PARKED AT MO, DUE TO ISSUE INVOKING WITHOUT USER EVENT ON MOBILES */
+
+    $(function () {
+/*
       //when scroll to iii section
       var waypoint = new Waypoint({
         element: document.getElementById('iii'),   //watch not js, no #
@@ -389,7 +396,8 @@
         },
         offset: 'bottom-in-view'
       });
-
+*/
+/*
       //reset iii section
       var waypoint = new Waypoint({
         element: document.getElementById('iii'),   //watch not js, no #
@@ -402,8 +410,9 @@
         },
         offset: '100%'
       });
+*/
 
-
+/*
       //background music triggered on ii section
       var inSession = false;
       var waypoint = new Waypoint({
@@ -411,9 +420,13 @@
         handler: function(direction) {
           if (direction == 'down') {
             console.log('You have scrolled down to skills');
-            //trigger background music */
+            //trigger background music
             if (!inSession) {
-              $('#background-music').trigger('load');
+              //event listener for load, invokes play method
+//              $('#background-music').bind('load',function(){
+//                $('#background-music').trigger('play');
+//              });
+//              $('#background-music').trigger('load');
               $('#background-music').trigger('play');
               inSession = true;
             }
@@ -424,9 +437,26 @@
         },
         offset: 'bottom-in-view'
       });
+*/
+
+
+      /* invoke with click icon */
+      $('#iii-click').on('click', startAOSequence);
+
 
 
     });
+
+    function startAOSequence() {
+      console.log('clicked icon');
+      //togger containers
+      $('.ao-iii-text-wrapper.a').css('visibility','hidden');
+      $('.ao-iii-text-wrapper.b').css('visibility','visible');
+      //add animated classed
+      $('.ao-iii-text').addClass('animated zoomIn');
+      //fire audio
+      $('#background-music').trigger('play');
+    }
 
 
 

@@ -600,6 +600,19 @@ section i {
   margin-left: 5%;
   margin-right: 5%; }
 
+.ao-iii-text-wrapper.a {
+  visibility: visible; }
+
+.ao-iii-text-wrapper.b {
+  visibility: hidden; }
+
+.ao-iii-text-wrapper.a > span {
+  color: #fff; }
+
+.ao-iii-text-wrapper.a > span:hover {
+  color: #F79646;
+  opacity: 0.8; }
+
 #iii-text-1, #iii-text-2, #iii-text-3 {
   padding: 10px;
   /* animate.css properties */
