@@ -72,6 +72,28 @@
 .ao-font-massive {
   font-size: 1.75em; }
 
+/* general styles across all sections */
+section h1 {
+  color: #303538;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  padding: 10px 0 10px 0; }
+
+section h1 i {
+  color: #A7A7A7;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: normal; }
+
+section p {
+  color: #808080;
+  font-size: 18px; }
+
+section i {
+  color: #929292;
+  font-size: 14px; }
+
 /* include more specifc contents after generic, so can override locally */
 /* _navbars partial */
 /* core style rules */
@@ -429,7 +451,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%;
   border-radius: 50%;
   border: solid 3px #4BACC6; }
@@ -448,7 +470,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%;
   padding-top: 10px; }
 
@@ -463,7 +485,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%; }
 
 /* Skills */
@@ -527,7 +549,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%;
   padding-top: 30px; }
 
@@ -541,7 +563,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%;
   padding-top: 20px; }
 
@@ -555,7 +577,7 @@ section i {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* respond */
+  /* responsive */
   max-width: 100%;
   padding-top: 20px; }
 
@@ -717,6 +739,147 @@ section i {
 
   .ao-iii-container {
     font-size: 4em; } }
+/* showcase */
+/* Clients */
+.ao-clients {
+  background-color: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px; }
+
+/* container to align portrait image */
+.ao-clients1, .ao-clients2 {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 15px; }
+
+.ao-clients1 img, .ao-clients2 img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  width: 100%; }
+
+/* ifpi */
+.ao-ifpi {
+  margin-bottom: 100px; }
+
+.ao-ifpi-container {
+  border-top: solid 2px #A7A7A7; }
+
+.a-img1-container, .a-img2-container, .a-img3-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+#a-img1, #a-img2, #a-img3 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%; }
+
+#a-img2, #a-img3 {
+  height: 300px;
+  border: 4px solid #4BACC6; }
+
+#a-img2:hover, #a-img3:hover {
+  border: 4px solid #F79646; }
+
+/* as */
+.ao-as {
+  margin-bottom: 100px; }
+
+.ao-as-container {
+  border-top: solid 2px #A7A7A7; }
+
+.b-img1-container, .b-img2-container, .b-img3-container {
+  margin: 0 auto;
+  max-width: 95%;
+  padding-bottom: 15px; }
+
+.b-img2-container, .b-img3-container {
+  padding-top: 30px;
+  max-width: 80%; }
+
+#b-img1, #b-img2, #b-img3 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%; }
+
+#b-img2, #b-img3 {
+  border: 4px solid #4BACC6; }
+
+#b-img2:hover, #b-img3:hover {
+  border: 4px solid #F79646; }
+
+/* AudioOrange */
+.ao-audioorange {
+  margin-bottom: 100px; }
+
+.ao-audioorange-container {
+  border-top: solid 2px #A7A7A7; }
+
+.c-img-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px;
+  padding-bottom: 30px; }
+
+#c-img, #c-img2 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+  border: 4px solid #4BACC6;
+  margin-top: 10px; }
+
+#c-img {
+  max-width: 80%; }
+
+#c-img2 {
+  max-height: 500px;
+  max-width: 100%;
+  margin-top: 30px;
+  border: none; }
+
+#c-img:hover {
+  border: 6px solid #F79646; }
+
+/* github */
+.ao-monokai {
+  margin-bottom: 50px; }
+
+.ao-monokai-container {
+  border-top: solid 2px #A7A7A7; }
+
+.d-img-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px; }
+
+#d-img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+  margin-top: 10px;
+  border: 6px solid #4BACC6; }
+
+#d-img:hover {
+  border: 6px solid #F79646; }
+
 /*************************
  *   contacts partial    *
  *************************/

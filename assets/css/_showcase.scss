@@ -1,0 +1,204 @@
+/* showcase */
+
+
+/* Clients */
+.ao-clients {
+  background-color: #fff;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* container to align portrait image */
+.ao-clients1, .ao-clients2 {
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.ao-clients1 img, .ao-clients2 img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* respond */
+  max-width: 100%;
+  width: 100%;
+}
+
+/* ifpi */
+.ao-ifpi {
+  margin-bottom: 100px;
+}
+
+.ao-ifpi-container {
+  border-top: solid 2px $ao-grey-light;
+}
+
+.a-img1-container, .a-img2-container, .a-img3-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#a-img1, #a-img2, #a-img3 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+}
+
+#a-img2, #a-img3 {
+  height: 300px;
+  border: 4px solid $ao-blue-dark;
+}
+
+#a-img2:hover, #a-img3:hover {
+  border: 4px solid $ao-orange-dark;
+}
+
+
+
+/* as */
+.ao-as {
+  margin-bottom: 100px;
+}
+
+.ao-as-container {
+  border-top: solid 2px $ao-grey-light;
+}
+
+.b-img1-container, .b-img2-container, .b-img3-container {
+  margin: 0 auto;
+  max-width: 95%;
+  //padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.b-img2-container, .b-img3-container {
+  //height: 260px;
+  padding-top: 30px;
+  max-width: 80%;
+}
+
+#b-img1, #b-img2, #b-img3 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+}
+
+#b-img2, #b-img3 {
+  border: 4px solid $ao-blue-dark;
+}
+
+#b-img2:hover, #b-img3:hover {
+  border: 4px solid $ao-orange-dark;
+}
+
+
+/* AudioOrange */
+.ao-audioorange {
+  margin-bottom: 100px;
+}
+
+.ao-audioorange-container {
+  border-top: solid 2px $ao-grey-light;
+}
+
+.c-img-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+#c-img, #c-img2 {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+  border: 4px solid $ao-blue-dark;
+  margin-top: 10px;
+}
+
+#c-img {
+  max-width: 80%;
+}
+
+#c-img2 {
+  max-height: 500px;
+  max-width: 100%;
+  margin-top: 30px;
+  border: none;
+}
+
+#c-img:hover {
+  border: 6px solid $ao-orange-dark;
+}
+
+/* github */
+.ao-monokai {
+  margin-bottom: 50px;
+}
+
+.ao-monokai-container {
+  border-top: solid 2px $ao-grey-light;
+}
+
+.d-img-container {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-top: 15px;
+}
+
+#d-img {
+  /* center align */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* responsive */
+  max-width: 100%;
+  margin-top: 10px;
+  border: 6px solid $ao-blue-dark;
+}
+
+#d-img:hover {
+  border: 6px solid $ao-orange-dark;
+}
+
+
+
+//
+//.ao-showcase-container .d-inner {
+//  /* trick to add opacity to background image */
+//  width: 100%;
+//  height: 100%;
+//  display: block;
+//  position: relative;
+//}
+//
+//.ao-showcase-container .d-inner::after {
+//  /* trick to add opacity to background image */
+//  content: "";
+//  background: url(../img/ao-webstorm-monokai.png);
+//  opacity: 0.3;
+//  top: 0;
+//  left: 0;
+//  bottom: 0;
+//  right: 0;
+//  position: absolute;
+//  z-index: -1;
+//}
+
+
+
+
+

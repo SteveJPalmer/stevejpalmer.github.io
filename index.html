@@ -43,14 +43,13 @@
   <body class="about">
 
   <!-- remove once site completed -->
-  <div class="ao-font-large ao-font-family"
-       style="position:fixed; top: 0; left: 20%;
-       color: red; font-style: italic; z-index:1001;">
-       <p > Under Construction..
-         <i style="font-size:0.6em;">Nav, RWD & Contact ok</i>
-       </p>
-  </div>
-
+  <!--<div class="ao-font-large ao-font-family"-->
+       <!--style="position:fixed; top: 0; left: 20%;-->
+       <!--color: red; font-style: italic; z-index:1001;">-->
+       <!--<p > Under Construction..-->
+         <!--<i style="font-size:0.6em;">Nav, RWD & Contact ok</i>-->
+       <!--</p>-->
+  <!--</div>-->
 
 
   <div class="container-fluid container-fluid-index ao-fill ao-font-family">
@@ -184,7 +183,7 @@
               </p>
               <p><span class="ao-font-overweight">I</span>ndeed, how things have changed...
                 When started as graduate trainee, office had just a single standalone internet machine!
-                - had to book 15min sessions <i>(aka booking a meeting room today!)</i>
+                - had to book 15min sessions. <i>(aka booking a meeting room today!)</i>
               </p>
               <p><span class="ao-font-overweight">C</span>urrent focus area is Angular, Javascript & MEAN Stack,
                 within the mesmerizing supporting ecosystem..<i>
@@ -290,7 +289,7 @@
                 <img class="img-wilber" src="assets/img/wilber-gimps_mascot-100.png" alt=“AO”>
               </a>
               Exceptional example of what community can achieve... bye bye photoshop, hello
-              Wilber <i>(mascot)</i>
+              Wilber. <i>(mascot)</i>
             </p>
             <div class="ao-design-img">
               <img id="design-img" src="assets/img/Design.png" >
@@ -308,7 +307,7 @@
           <div class="col-xs-12 col-sm-4 ao-col3">
             <p class="text-center"><span class="ao-font-overweight">W</span>ebStorm rocks - "code completion at its finest" &
               so many features. Its integration with Dash worth price alone!
-              Gulp does the rest nicely & Atom for those quick file previews</p>
+              Gulp does the rest nicely & Atom for those quick file previews.</p>
             <div class="ao-build-img">
               <img id="build-img" src="assets/img/Build.png" >
             </div>
@@ -373,141 +372,30 @@
 
   <script src="assets/js/ao.js"></script>
   <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
-
-  <script>
-    /* waypoint page scripts */
-
-  /* WAYPOINTS PARKED AT MO, DUE TO ISSUE INVOKING WITHOUT USER EVENT ON MOBILES */
-
-    $(function () {
-/*
-      //when scroll to iii section
-      var waypoint = new Waypoint({
-        element: document.getElementById('iii'),   //watch not js, no #
-        handler: function(direction) {
-          if (direction == 'down') {
-            //console.log('You have scrolled down to iii');
-            //add animate class
-            $('.ao-iii-text').addClass('animated zoomIn');
-          }
-          //else {
-            //console.log('You have scrolled up to iii');
-          //}
-        },
-        offset: 'bottom-in-view'
-      });
-*/
-/*
-      //reset iii section
-      var waypoint = new Waypoint({
-        element: document.getElementById('iii'),   //watch not js, no #
-        handler: function(direction) {
-          if (direction == 'up') {
-            //console.log('You have scrolled down to iii');
-            //add animate class
-            $('.ao-iii-text').removeClass('animated zoomIn');
-          }
-        },
-        offset: '100%'
-      });
-*/
-
-/*
-      //background music triggered on ii section
-      var inSession = false;
-      var waypoint = new Waypoint({
-        element: document.getElementById('iii'),   //watch not js, no #
-        handler: function(direction) {
-          if (direction == 'down') {
-            console.log('You have scrolled down to skills');
-            //trigger background music
-            if (!inSession) {
-              //event listener for load, invokes play method
-//              $('#background-music').bind('load',function(){
-//                $('#background-music').trigger('play');
-//              });
-//              $('#background-music').trigger('load');
-              $('#background-music').trigger('play');
-              inSession = true;
-            }
-          }
-          //else {
-          //console.log('You have scrolled up to iii');
-          //}
-        },
-        offset: 'bottom-in-view'
-      });
-*/
-
-
-      /* invoke with click icon */
-      $('#iii-click').on('click', startAOSequence);
-
-
-
-    });
-
-    function startAOSequence() {
-      console.log('clicked icon');
-      //togger containers
-      $('.ao-iii-text-wrapper.a').css('visibility','hidden');
-      $('.ao-iii-text-wrapper.b').css('visibility','visible');
-      //add animated classed
-      $('.ao-iii-text').addClass('animated zoomIn');
-      //fire audio
-      $('#background-music').trigger('play');
-    }
-
-
-
-    $(function () {
-
-      /* remove iii items when third animation animation completes */
-      $('#iii-text-3').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-       function(e) {
-        //code to execute after animation ends
-//         $('.headline-row').removeClass('zoomInDown').addClass('fadeOut');
-         $('.hide-end1').fadeOut(2000);
-      });
-
-      /* remove iii items when fourth animation animation completes */
-      $('#iii-text-4').one('webkitAnimationEnd oanimationend msAnimationEnd animationend',
-        function(e) {
-          //code to execute after animation ends
-          $('.hide-end2').fadeOut(2800);
-        });
-
-    });
-  </script>
+  <script src="assets/js/about.js"></script>
 
 </body>
 </html>
 
-
-<!-- section template -->
+<!-- template -->
 <!--&lt;!&ndash; Info &ndash;&gt;-->
 <!--<section class="row ao-info">-->
   <!--<div class="ao-info-container ao-center-page">-->
-
     <!--&lt;!&ndash; section Title &ndash;&gt;-->
     <!--<div class="col-xs-12">-->
-      <!--<h1>About Me</h1>-->
-
+      <!--<h1>Template</h1>-->
       <!--&lt;!&ndash; content panes &ndash;&gt;-->
       <!--<div class="row">-->
         <!--<div class="col-xs-12 col-sm-4 ao-row">-->
-          <!--<p>Left pane: picture</p>-->
+          <!--<p>Left pane ... </p>-->
         <!--</div>-->
         <!--<div class="col-xs-12 col-sm-4 ao-row">-->
-          <!--<p>Right pane: What I Do  - Full Stack 20 years... </p>-->
-          <!--<i>bottom pc-mobile image - blue</i>-->
+          <!--<p>Middle pane ... </p>-->
         <!--</div>-->
         <!--<div class="col-xs-12 col-sm-4 ao-row">-->
-          <!--<p>Right pane: My Passions  - tech, music, sport</p>-->
-          <!--<i>bottom music image - blue</i>-->
+          <!--<p>Right pane ...</p>-->
         <!--</div>-->
       <!--</div>-->
-
     <!--</div>-->
   <!--</div>-->
 <!--</section>-->
