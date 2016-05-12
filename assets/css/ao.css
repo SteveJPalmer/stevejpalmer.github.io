@@ -740,6 +740,20 @@ section i {
   .ao-iii-container {
     font-size: 4em; } }
 /* showcase */
+/* override Bootstrap anchor style */
+.ao-monokai a {
+  color: #4BACC6;
+  -webkit-transition: color 1.5s ease;
+  transition: color 1.5s ease;
+  text-decoration: none; }
+
+/* anchor hover */
+.ao-monokai a:hover {
+  color: #F79646;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none; }
+
 /* Clients */
 .ao-clients {
   background-color: #fff;

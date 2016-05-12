@@ -1,5 +1,20 @@
 /* showcase */
 
+/* override Bootstrap anchor style */
+.ao-monokai a {
+  color: $ao-blue-dark;
+  -webkit-transition: color 1.5s ease;
+  transition: color 1.5s ease;
+  text-decoration: none;
+}
+
+/* anchor hover */
+.ao-monokai a:hover {
+  color: $ao-orange-dark;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
 
 /* Clients */
 .ao-clients {
