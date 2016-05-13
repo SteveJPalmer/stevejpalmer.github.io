@@ -741,14 +741,14 @@ section i {
     font-size: 4em; } }
 /* showcase */
 /* override Bootstrap anchor style */
-.ao-monokai a {
+.ao-monokai a, .ao-as a {
   color: #4BACC6;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
   text-decoration: none; }
 
 /* anchor hover */
-.ao-monokai a:hover {
+.ao-monokai a:hover, .ao-as a:hover {
   color: #F79646;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -789,19 +789,16 @@ section i {
   padding-top: 15px;
   padding-bottom: 15px; }
 
-#a-img1, #a-img2, #a-img3 {
+#a-img1, #a-img2, #a-img3a, #a-img3b {
   /* center align */
   display: block;
   margin-left: auto;
   margin-right: auto;
   /* responsive */
-  max-width: 100%; }
-
-#a-img2, #a-img3 {
-  height: 300px;
+  max-width: 100%;
   border: 4px solid #4BACC6; }
 
-#a-img2:hover, #a-img3:hover {
+#a-img1:hover, #a-img2:hover, #a-img3a:hover, #a-img3b:hover {
   border: 4px solid #F79646; }
 
 /* as */
@@ -867,7 +864,7 @@ section i {
   border: none; }
 
 #c-img:hover {
-  border: 6px solid #F79646; }
+  border: 4px solid #F79646; }
 
 /* github */
 .ao-monokai {

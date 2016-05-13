@@ -1,7 +1,7 @@
 /* showcase */
 
 /* override Bootstrap anchor style */
-.ao-monokai a {
+.ao-monokai a, .ao-as a {
   color: $ao-blue-dark;
   -webkit-transition: color 1.5s ease;
   transition: color 1.5s ease;
@@ -9,7 +9,7 @@
 }
 
 /* anchor hover */
-.ao-monokai a:hover {
+.ao-monokai a:hover, .ao-as a:hover  {
   color: $ao-orange-dark;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -57,21 +57,17 @@
   padding-bottom: 15px;
 }
 
-#a-img1, #a-img2, #a-img3 {
+#a-img1, #a-img2, #a-img3a, #a-img3b {
   /* center align */
   display: block;
   margin-left: auto;
   margin-right: auto;
   /* responsive */
   max-width: 100%;
-}
-
-#a-img2, #a-img3 {
-  height: 300px;
   border: 4px solid $ao-blue-dark;
 }
 
-#a-img2:hover, #a-img3:hover {
+#a-img1:hover, #a-img2:hover, #a-img3a:hover, #a-img3b:hover {
   border: 4px solid $ao-orange-dark;
 }
 
@@ -156,7 +152,7 @@
 }
 
 #c-img:hover {
-  border: 6px solid $ao-orange-dark;
+  border: 4px solid $ao-orange-dark;
 }
 
 /* github */
