@@ -1,0 +1,102 @@
+
+
+/* media */
+body.media {
+  background: black url('../img/California_JoshuaTree_1200.jpg') no-repeat center;
+  //background-image: url('../img/California_JoshuaTree_1200.jpg');
+  //background-position: center;
+  background-size: cover;
+  //background-repeat: no-repeat;
+  //background-color: $ao-the-new-black;
+}
+
+.ao-media {
+  margin-top: 100px;
+}
+
+/* media-menu base styles */
+.media-menu {
+  position: relative;
+  padding: 0px;
+  margin: 0 0 10px 0;
+}
+
+.media-menu li {
+  display: block;
+  font-size: 2.4em;
+  padding-left: 50px;
+}
+
+.media-menu-container {
+  position: relative;
+  width: 340px;
+  margin: 0 auto;
+}
+
+/* override bootstraps <a> styling */
+.media-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/* anchor styling - main effect */
+.media-menu li a{
+  display: block;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+  padding: 5px 20px;
+  margin: 3px;
+  background: rgba(255,255,255,0.2);
+  letter-spacing: 1px;
+  -webkit-transform: skew(-12deg);
+  -moz-transform: skew(-12deg);
+  -o-transform: skew(-12deg);
+  -ms-transform: skew(-12deg);
+  transform: skew(-12deg);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+/* hover over menu  */
+.media-menu:hover li a{
+  color: transparent;
+  text-shadow: 0px 0px 10px rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.2);
+  -webkit-transform: skew(0deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  -ms-transform: skew(0deg);
+  transform: skew(0deg);
+}
+/* hover over menu item */
+.media-menu li a:hover{
+  background: transparent;
+  text-shadow: 1px 1px 10px rgba(255,255,255,0.7);
+  color: $ao-blue-dark;
+}
+
+
+
+/* ----------------------
+   responsive adjustments
+   ---------------------- */
+
+/* mobile nav */
+@media screen and (max-width: 767px) {
+  .ao-media {
+    margin-top: 100px;
+  }
+  .media-menu li {
+    font-size: 2em;
+    padding-left: 0px;
+  }
+  .media-menu-container {
+    width: 260px;
+
+  }
+
+}

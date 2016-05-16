@@ -240,7 +240,6 @@ color: $ao-blue-dark;
 }
 
 
-
 /* header & footer ul - font sizes */
 @media screen and (max-width: 850px) {
   .ao-nav .ao-header-ul li {
@@ -250,6 +249,7 @@ color: $ao-blue-dark;
     font-size: 1.2em;
   }
 }
+
 /* iphone/mobile */
 @media screen and (max-width: 550px) {
   .ao-footer .ao-footer-ul li {
@@ -260,8 +260,6 @@ color: $ao-blue-dark;
   .ao-footer p {
     font-size: 0.8em;
   }
-
-  /* change centering classes to 95% */
   .ao-nav .logo-text {
     top: 22px;
     font-size: 1.6em;

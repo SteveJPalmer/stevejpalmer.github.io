@@ -38,13 +38,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
 
-  <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="assets/css/styleIE.css" />
-  <![endif]-->
-
 </head>
 <!-- 'font-family: Georgia, "Times New Roman", Times, serif;' -->
-<body class="media">
+<body>
 
 <!-- remove once site completed -->
 <div class="ao-font-large ao-font-family"
@@ -57,7 +53,7 @@
 
 
 
-<div class="container-fluid container-fluid-index ao-font-family">
+<div class="container-fluid container-fluid-index ao-fill ao-font-family">
 
 
   <div class="row">
@@ -107,22 +103,28 @@
     </header>
   </div>
 
+  <div style="position: relative; top: 100px;">
+    <p class="text-center" style="font-size: 2em; font-weight: 700; color: darkred;">Under Construction... </p>
+  </div>
 
-  <!-- media -->
-  <section class="row ao-media">
-    <div class="ao-media-container ao-center-page">
+  <!-- Info -->
+  <section class="row ao-info">
+    <div class="ao-info-container ao-center-page">
       <!-- section Title -->
       <div class="col-xs-12">
-
-        <div class="media-menu-container">
-          <ul class="media-menu">
-            <li><a href="#">Pathways</a></li>
-            <li><a href="#">Life</a></li>
-            <li><a href="#">Landscape</a></li>
-            <li><a href="#">First steps</a></li>
-          </ul>
+        <h1>Template</h1>
+        <!-- content panes -->
+        <div class="row" style="height: 300px;">
+          <div class="col-xs-12 col-sm-4 ao-row">
+            <p>Left pane ... </p>
+          </div>
+          <div class="col-xs-12 col-sm-4 ao-row">
+            <p>Middle pane ... </p>
+          </div>
+          <div class="col-xs-12 col-sm-4 ao-row">
+            <p>Right pane ...</p>
+          </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -136,31 +138,35 @@
 
 
   <!-- Footer -->
-  <!--<div class="row">-->
-    <!--<div class="ao-footer">-->
-      <!--<div class="col-xs-12">-->
-        <!--<div class="ao-center-page">-->
-          <!--<div class="clearfix">-->
-            <!--<ul class="ao-footer-ul">-->
-              <!--<li><a href="index.html">About</a></li>-->
-              <!--<li><a href="contact.html">Contact</a></li>-->
-              <!--<li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">-->
-                <!--LinkedIn <span class="fa fa-linkedin-square ao-font-overweight fa-1x" aria-hidden="true"></span>-->
-              <!--</a></li>-->
-              <!--<li><a target="_blank" href="https://github.com/SteveJPalmer">-->
-                <!--GitHub <span class="fa fa-github ao-font-overweight fa-1x" aria-hidden="true"></span>-->
-              <!--</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-          <!--<p>Copyright © 2016, Steve Palmer</p>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
+  <div class="row">
+    <div class="ao-footer">
+      <div class="col-xs-12">
+        <div class="ao-center-page">
+          <div class="clearfix">
+            <ul class="ao-footer-ul">
+              <li><a href="index.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                LinkedIn <span class="fa fa-linkedin-square ao-font-overweight fa-1x" aria-hidden="true"></span>
+              </a></li>
+              <li><a target="_blank" href="https://github.com/SteveJPalmer">
+                GitHub <span class="fa fa-github ao-font-overweight fa-1x" aria-hidden="true"></span>
+              </a></li>
+            </ul>
+          </div>
+          <p>Copyright © 2016, Steve Palmer</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 <script src="assets/js/ao.js"></script>
+<script src="assets/js/vendor/jquery.waypoints.min.js"></script>
+
 
 </body>
 </html>
