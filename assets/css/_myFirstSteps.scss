@@ -1,0 +1,45 @@
+
+/* media */
+body.my-first-steps {
+  background: black url('../img/NaturalWorld_1d-1024.jpg') no-repeat center;
+  //background-image: url('../img/California_JoshuaTree_1200.jpg');
+  //background-position: center;
+  background-size: cover;
+  //background-repeat: no-repeat;
+  //background-color: $ao-the-new-black;
+}
+
+
+#ao-close {
+  color: #fff;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#ao-close:hover {
+  color: $ao-orange-dark;
+}
+
+.player-container {
+  width: 90%;
+  margin-left: 5%;
+}
+
+
+
+/* embedresponsively.com */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%; }
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 3%;
+  width: 94%;
+  height: 94%;
+  border: 6px solid #fff;
+}
