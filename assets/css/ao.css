@@ -1084,12 +1084,72 @@ body.my-first-steps {
   overflow: hidden;
   max-width: 100%; }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe, .embed-container object, .embed-container embed, .embed-container video {
   position: absolute;
   top: 0;
-  left: 3%;
+  left: 0;
   width: 94%;
   height: 94%;
   border: 6px solid #fff; }
+
+/* pathways */
+/* background image centering */
+#bg-pathways-container {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  /* animate.css properties */
+  -o-animation-duration: 4s;
+  -moz-animation-duration: 4s;
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -o-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease; }
+
+#bg-pathways-container img {
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%; }
+
+/* issues with Bootstrap carousel images breaking out of bady background!!!
+   even with fixed heights .... moved image from background to <img> absolute */
+body.pathways {
+  background-color: #303538; }
+
+#ao-close {
+  color: #fff;
+  margin-top: 1%;
+  margin-bottom: 1%; }
+
+#ao-close:hover {
+  color: #F79646; }
+
+.carousel-pathways-container {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  max-height: 450px; }
+
+.carousel-inner img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 450px; }
+
+#footnote {
+  display: block;
+  color: white;
+  font-size: 1.4em;
+  margin-top: 20px; }
 
 /*# sourceMappingURL=ao.css.map */

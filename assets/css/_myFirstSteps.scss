@@ -35,10 +35,10 @@ body.my-first-steps {
   overflow: hidden;
   max-width: 100%; }
 
-.embed-container iframe, .embed-container object, .embed-container embed {
+.embed-container iframe, .embed-container object, .embed-container embed, .embed-container video {
   position: absolute;
   top: 0;
-  left: 3%;
+  left: 0;
   width: 94%;
   height: 94%;
   border: 6px solid #fff;
