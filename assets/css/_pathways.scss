@@ -8,10 +8,10 @@
   width: 200%;
   height: 200%;
   /* animate.css properties */
-  -o-animation-duration: 4s;
-  -moz-animation-duration: 4s;
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
+  -o-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   //-webkit-animation-delay: 0.5s;
   -o-animation-timing-function: ease;
   -moz-animation-timing-function: ease;
@@ -54,20 +54,46 @@ body.pathways {
   color: $ao-orange-dark;
 }
 
+
 .carousel-pathways-container {
   position: relative;
-  width: 90%;
+  display: table;
   margin: 0 auto;
-  max-height: 450px;
+  padding-top: 15px;
 }
 
-.carousel-inner img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  max-height: 450px;
+.carousel-pathways-container .carousel {
+  display: table;
+  z-index: 2;
+  -moz-box-shadow: 0 0 30px #fff;
+  -webkit-box-shadow: 0 0 30px #fff;
+  box-shadow: 0 0 30px #fff;
 }
 
+.carousel-pathways-container .carousel img {
+  max-height: 400px;
+}
+
+//.carousel-pathways-container {
+//  position: relative;
+//  width: 90%;
+//  margin: 0 auto;
+//  max-height: 450px;
+//}
+//
+//.carousel-inner img {
+//  position: relative;
+//  margin: 0 auto;
+//  max-width: 100%;
+//  max-height: 450px;
+//}
+
+#hover-note {
+  display: inline-block;
+  color: $ao-blue-light;
+  padding-top: 3px;
+  font-style: italic;
+}
 
 #footnote {
   display: block;
@@ -78,3 +104,21 @@ body.pathways {
   margin-top: 20px;
 }
 
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  color: $ao-blue-dark;
+}
+
+#carousel-pathways .carousel-indicators li {
+  //border-color: $ao-blue-dark;
+  height: 14px;
+  width: 14px;
+  border: 2px solid #fff;
+}
+
+#carousel-pathways .carousel-indicators li.active {
+  //border-color: $ao-blue-dark;
+  background-color: $ao-blue-dark;
+  height: 16px;
+  width: 16px;
+  border: 3px solid #fff;
+}

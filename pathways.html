@@ -82,6 +82,7 @@
               <li data-target="#carousel-pathways" data-slide-to="3"></li>
               <li data-target="#carousel-pathways" data-slide-to="4"></li>
               <li data-target="#carousel-pathways" data-slide-to="5"></li>
+              <li data-target="#carousel-pathways" data-slide-to="6"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -90,19 +91,22 @@
                 <img src="assets/img/Pathways_1-450.jpg" alt="image0">
               </div>
               <div class="item">
-                <img src="assets/img/Pathways_2-450.jpg" alt="image1" class="img-responsive">
+                <img src="assets/img/Pathways_2-450.jpg" alt="image1">
               </div>
               <div class="item">
-                <img src="assets/img/Pathways_4-450.jpg" alt="image2" class="img-responsive">
+                <img src="assets/img/Pathways_4-450.jpg" alt="image2">
               </div>
               <div class="item">
-                <img src="assets/img/Pathways_5-450.jpg" alt="image3" class="img-responsive">
+                <img src="assets/img/Pathways_5-450.jpg" alt="image3">
               </div>
               <div class="item">
-                <img src="assets/img/Pathways_6-450.jpg" alt="image4" class="img-responsive">
+                <img src="assets/img/Pathways_7-450.jpg" alt="image4">
               </div>
               <div class="item">
-                <img src="assets/img/Pathways_7-450.jpg" alt="image5" class="img-responsive">
+                <img src="assets/img/Pathways_6-450.jpg" alt="image5">
+              </div>
+              <div class="item">
+                <img src="assets/img/Christchurch6-450.jpg" alt="image6">
               </div>
             </div>
 
@@ -117,6 +121,7 @@
             </a>
           </div>
         </div>
+        <div class="text-center"><span id="hover-note" class="text-center">(hover to pause)</span></div>
 
         <span id="footnote" class="text-center">All site Photographs taken by myself with my trusty Nikon 3000 SLR.
           <br>Image re-sampling & editing solely in GIMP</span>
@@ -125,17 +130,14 @@
     </div>
   </section>
 
-  <section class="row ao-close">
-    <div class="ao-close-container ao-center-page">
-      <!-- section Title -->
-      <div class="col-xs-12">
+  <script src="assets/js/ao.js"></script>
 
-      </div>
-    </div>
-  </section>
-
-
-<script src="assets/js/ao.js"></script>
+  <script>
+    $('#carousel-pathways').carousel({
+      pause: "hover",
+      interval: 3000
+    });
+  </script>
 
 </body>
 </html>

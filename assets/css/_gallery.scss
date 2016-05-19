@@ -1,0 +1,137 @@
+/* gallery */
+
+body.gallery {
+  background-color: #000;
+}
+
+#ao-close {
+  color: #fff;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  //z-index: 999;
+}
+
+#ao-close:hover {
+  color: $ao-orange-dark;
+}
+
+#hover-note {
+  display: inline-block;
+  color: $ao-blue-light;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+#footnote {
+  display: block;
+  color: white;
+  font-size: 1.4em;
+  //font-weight: 700;
+  //font-style: italic;
+  margin-top: 20px;
+}
+
+
+/* carousel container */
+section.aoSlider{
+  margin: 30px auto;
+  padding: 30px;
+  position: relative;
+  display: table;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* carousel itself */
+section.aoSlider .carousel{
+  display: table;
+  z-index: 2;
+  -moz-box-shadow: 0 0 30px #000;
+  -webkit-box-shadow: 0 0 30px #000;
+  box-shadow: 0 0 30px #000;
+}
+
+section.aoSlider img {
+  max-height: 400px;
+}
+
+.glyphicon-chevron-left, .glyphicon-chevron-right {
+  color: $ao-blue-dark;
+}
+
+#carousel-gallery .carousel-indicators li {
+  //border-color: $ao-blue-dark;
+  height: 14px;
+  width: 14px;
+  border: 2px solid #fff;
+}
+
+#carousel-gallery .carousel-indicators li.active {
+  //border-color: $ao-blue-dark;
+  background-color: $ao-blue-dark;
+  height: 16px;
+  width: 16px;
+  border: 3px solid #fff;
+}
+
+/* background copy of image - blured for effect */
+section.aoSlider > img{
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  transition: all .5s;
+  -webkit-filter: blur(3vw);
+  -moz-filter: blur(3vw);
+  -o-filter: blur(3vw);
+  -ms-filter: blur(3vw);
+  filter: blur(3vw);
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0.7;
+}
+
+/***** original design *****/
+
+/* carousel itself */
+//section.aoSlider .carousel{
+//  display: table;
+//  z-index: 2;
+//  -moz-box-shadow: 0 0 4px #444;
+//  -webkit-box-shadow: 0 0 4px #444;
+//  box-shadow: 0 0 15px rgba(1,1,1,.5);
+//}
+
+//section.aoSlider:hover > img{
+//  -ms-transform: scale(1.2);
+//  -webkit-transform: scale(1.2);
+//  transform: scale(1.2);
+//  opacity: 1;
+//}
+
+/* background copy of image - blured for effect */
+//section.aoSlider > img{
+//  position: absolute;
+//  top: 30px;
+//  z-index: 1;
+//  transition: all .3s;
+//  filter: blur(1.8vw);
+//  -webkit-filter: blur(2vw);
+//  -moz-filter: blur(2vw);
+//  -o-filter: blur(2vw);
+//  -ms-filter: blur(2vw);
+//  -ms-transform: scale(1.1);
+//  -webkit-transform: scale(1.1);
+//  transform: scale(1.1);
+//  opacity: 0.5;
+//}
+/* disable mouse hover events on background image */
+
+section.aoSlider img{
+  pointer-events: none;
+}
+
