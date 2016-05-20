@@ -150,7 +150,14 @@
     </div>
   </section>
 
-
+  <!-- audio -->
+  <div id="gallery-music-container" class="text-center">
+    <audio id="gallery-music" controls autoplay preload="auto" >
+      <source src="assets/audio/RunningUpThatHill.mp3" type="audio/mp3">
+      <!--<source src="assets/audio/CanonInD.ogg" type="audio/ogg">-->
+      <!--<source src="assets/audio/CanonInD.webm" type="audio/webm">-->
+    </audio>
+  </div>
 
 <script src="assets/js/ao.js"></script>
 
@@ -158,7 +165,7 @@
 
   $('#carousel-gallery').carousel({
     pause: "hover",
-    interval: 2500
+    interval: 5000
   });
 
   var startImage = $('#carousel-gallery .item.active > img').attr('src');

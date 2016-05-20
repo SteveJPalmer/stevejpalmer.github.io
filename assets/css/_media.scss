@@ -1,17 +1,26 @@
-
-
 /* media */
+
 body.media {
   background: black url('../img/California_JoshuaTree_1200.jpg') no-repeat center;
   //background-image: url('../img/California_JoshuaTree_1200.jpg');
   //background-position: center;
-  background-size: cover;
+  background-size: 290% 290%;
+  //opacity: 0;
   //background-repeat: no-repeat;
   //background-color: $ao-the-new-black;
+  -moz-transition: background-size 11.75s ease-out 1s;
+  -webkit-transition: background-size 11.75s ease-out 1s;
+  transition: background-size 11.75s ease-out 1s;
+}
+
+body.media.zoom {
+  background-size: 100% 100%;
+  opacity: 1;
 }
 
 .ao-media {
-  margin-top: 120px;
+  margin-top: 100px;
+  z-index: 999;
 }
 
 /* media-menu base styles */
@@ -80,6 +89,19 @@ body.media {
 }
 
 
+/* music container */
+#media-music-container {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-left: 40px;
+}
+#media-music-container audio {
+  width: 280px;
+}
+
+
 
 /* ----------------------
    responsive adjustments
@@ -88,7 +110,7 @@ body.media {
 /* mobile nav */
 @media screen and (max-width: 767px) {
   .ao-media {
-    margin-top: 100px;
+    margin-top: 130px;
   }
   .media-menu li {
     font-size: 2em;
@@ -96,5 +118,15 @@ body.media {
   }
   .media-menu-container {
     width: 260px;
+  }
+}
+
+/* iphone */
+@media screen and (max-width: 550px) {
+  #media-music-container {
+    padding-left: 0px;
+  }
+  #media-music-container audio {
+    width: 250px;
   }
 }

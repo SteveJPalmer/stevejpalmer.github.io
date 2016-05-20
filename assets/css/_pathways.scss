@@ -122,3 +122,26 @@ body.pathways {
   width: 16px;
   border: 3px solid #fff;
 }
+
+/* music container */
+#pathways-music-container {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#pathways-music-container audio {
+  width: 280px;
+}
+
+/* iphone */
+@media screen and (max-width: 550px) {
+  #pathways-music-container {
+    position: absolute;
+    top: 2%;
+    left: 43%;
+  }
+  #pathways-music-container audio {
+    width: 230px;
+  }
+}

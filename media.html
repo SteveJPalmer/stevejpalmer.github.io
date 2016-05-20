@@ -47,14 +47,13 @@
 <body class="media">
 
 <!-- remove once site completed -->
-<div class="ao-font-large ao-font-family"
-     style="position:fixed; top: 0; left: 20%;
-       color: red; font-style: italic; z-index:1001;">
-  <p > Under Construction..
-    <i style="font-size:0.6em;">Nav, RWD & Contact ok</i>
-  </p>
-</div>
-
+<!--<div class="ao-font-large ao-font-family"-->
+     <!--style="position:fixed; top: 0; left: 20%;-->
+       <!--color: red; font-style: italic; z-index:1001;">-->
+  <!--<p > Under Construction..-->
+    <!--<i style="font-size:0.6em;">Nav, RWD & Contact ok</i>-->
+  <!--</p>-->
+<!--</div>-->
 
 
 <div class="container-fluid container-fluid-index ao-font-family">
@@ -107,7 +106,6 @@
     </header>
   </div>
 
-
   <!-- media -->
   <section class="row ao-media">
     <div class="ao-media-container ao-center-page">
@@ -116,9 +114,6 @@
 
         <div class="media-menu-container">
           <ul class="media-menu">
-
-            <!--<li><a href="#">Life</a></li>-->
-            <!--<li><a href="#">Landscape</a></li>-->
             <li><a href="myFirstSteps.html">First steps</a></li>
             <li><a href="pathways.html">Pathways</a></li>
             <li><a href="gallery.html">Gallery</a></li>
@@ -130,39 +125,24 @@
   </section>
 
 
-
-
-
-
-
-
-
-  <!-- Footer -->
-  <!--<div class="row">-->
-    <!--<div class="ao-footer">-->
-      <!--<div class="col-xs-12">-->
-        <!--<div class="ao-center-page">-->
-          <!--<div class="clearfix">-->
-            <!--<ul class="ao-footer-ul">-->
-              <!--<li><a href="index.html">About</a></li>-->
-              <!--<li><a href="contact.html">Contact</a></li>-->
-              <!--<li><a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">-->
-                <!--LinkedIn <span class="fa fa-linkedin-square ao-font-overweight fa-1x" aria-hidden="true"></span>-->
-              <!--</a></li>-->
-              <!--<li><a target="_blank" href="https://github.com/SteveJPalmer">-->
-                <!--GitHub <span class="fa fa-github ao-font-overweight fa-1x" aria-hidden="true"></span>-->
-              <!--</a></li>-->
-            <!--</ul>-->
-          <!--</div>-->
-          <!--<p>Copyright © 2016, Steve Palmer</p>-->
-        <!--</div>-->
-      <!--</div>-->
-    <!--</div>-->
-  <!--</div>-->
-<!--</div>-->
-
+  <!-- audio -->
+  <div id="media-music-container" class="text-center">
+    <audio id="media-music" controls autoplay preload="auto" >
+      <source src="assets/audio/28DaysLater-edit2.mp3" type="audio/mp3">
+      <!--<source src="assets/audio/28DaysLater-edit2.ogg" type="audio/ogg">-->
+      <!--<source src="assets/audio/28DaysLater-edit2.webm" type="audio/webm">-->
+    </audio>
+  </div>
 
 <script src="assets/js/ao.js"></script>
+
+<script>
+  $(function () {
+    //class to initialise background scale
+    $('body.media').addClass('zoom');
+  });
+</script>
+
 
 </body>
 </html>
