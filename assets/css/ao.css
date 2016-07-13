@@ -775,6 +775,24 @@ section i {
   max-width: 100%;
   width: 100%; }
 
+/* Customer Quotes */
+.customer-quotes p {
+  color: #4BACC6;
+  font-style: italic;
+  font-size: 0.9em; }
+
+blockquote p:before {
+  content: open-quote;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #F79646; }
+
+blockquote p:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #F79646; }
+
 /* ifpi */
 .ao-ifpi {
   margin-bottom: 100px; }

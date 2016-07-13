@@ -41,6 +41,33 @@
   width: 100%;
 }
 
+/* Customer Quotes */
+.customer-quotes {
+  //margin-top: 20px;
+  //quotes: '\201C' '\201D';
+}
+
+.customer-quotes p {
+  color: $ao-blue-dark;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+blockquote p:before {
+  content: open-quote;
+  //content: '\201C';
+  font-weight: bold;
+  font-size: 1.4em;
+  color: $ao-orange-dark;
+}
+
+blockquote p:after {
+  content: close-quote;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: $ao-orange-dark;
+}
+
 /* ifpi */
 .ao-ifpi {
   margin-bottom: 100px;
