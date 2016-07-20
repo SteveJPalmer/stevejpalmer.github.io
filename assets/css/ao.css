@@ -516,6 +516,11 @@ section i {
   padding-left: 25px;
   padding-top: 2px; }
 
+.progress-bar i {
+  color: #808080;
+  font-style: italic;
+  font-size: 15px; }
+
 .ao-skills-container .ao-col1, .ao-skills-container .ao-col2 {
   padding-bottom: 30px; }
 
