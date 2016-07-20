@@ -197,6 +197,25 @@ section i {
   border-top: solid 2px $ao-grey-light;
 }
 
+
+/* override Bootstrap anchor style */
+.ao-linkedin a {
+  color: $ao-blue-mid;
+  font-style: italic;
+  -webkit-transition: color 1.5s ease;
+  transition: color 2s ease;
+  text-decoration: none;
+}
+
+/* header & footer list item hover */
+.ao-linkedin a:hover {
+  color: $ao-orange-dark;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none;
+}
+
+
 .progress {
   background: #CCC;
   border: 1px solid #C3C3C3;

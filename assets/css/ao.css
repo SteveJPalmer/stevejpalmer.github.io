@@ -495,6 +495,21 @@ section i {
 .ao-skills-container {
   border-top: solid 2px #A7A7A7; }
 
+/* override Bootstrap anchor style */
+.ao-linkedin a {
+  color: #78C1D4;
+  font-style: italic;
+  -webkit-transition: color 1.5s ease;
+  transition: color 2s ease;
+  text-decoration: none; }
+
+/* header & footer list item hover */
+.ao-linkedin a:hover {
+  color: #F79646;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  text-decoration: none; }
+
 .progress {
   background: #CCC;
   border: 1px solid #C3C3C3;
