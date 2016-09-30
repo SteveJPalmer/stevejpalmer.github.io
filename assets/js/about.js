@@ -36,8 +36,29 @@ function startAOSequence() {
   $('#background-music').trigger('play');
 }
 
+/* ScrollMagic controller */
+$(function () {
+  // init controller
+  var controller = new ScrollMagic.Controller();
 
-/* Note: Waypoints invoking <audio> play() mathod, PARKED at MO 
+  // build scene
+  var scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 200, offset: 375})
+    .setPin("#pin1",{pushFollowers: false} )   //,{pushFollowers: false}
+    // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+    //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+    .addTo(controller);
+
+  var scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 200, offset: 375})
+    .setPin("#pin2",{pushFollowers: false} )   //,{pushFollowers: false}
+    // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+    //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+    .addTo(controller);
+
+});
+
+
+
+/* Note: Waypoints invoking <audio> play() method, PARKED at MO
          - issues with Android (& mbl) needing user event to invoke Html5 audio 
          Starting to look into Audio Libraries that have cross-browser           */
 
