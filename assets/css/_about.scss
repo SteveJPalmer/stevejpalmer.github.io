@@ -216,17 +216,6 @@ section i {
 }
 
 /* skill progress bars */
-/* header for ScrollMagic pin */
-.pin-header {
-  background-color: white;
-  width:100%;
-  z-index:100;
-}
-
-.scroll-scene1 {
-  margin-top: 20px;
-}
-
 .progress {
   background: #CCC;
   border: 1px solid #C3C3C3;
@@ -490,7 +479,6 @@ section i {
    ---------------------- */
 
 /* tablet */
-
 @media screen and (max-width: 767px) {
   body.about {
     /* jump to final img hover effect styles */
@@ -530,3 +518,15 @@ section i {
   }
 }
 
+
+/* header for ScrollMagic pin */
+@media screen and (min-width: 768px) {
+  .pin-header {
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+  }
+  .scroll-scene1 {
+    margin-top: 16px;
+  }
+}

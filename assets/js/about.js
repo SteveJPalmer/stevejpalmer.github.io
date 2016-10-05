@@ -36,25 +36,78 @@ function startAOSequence() {
   $('#background-music').trigger('play');
 }
 
-/* ScrollMagic controller */
+
+/* ScrollMagic controller - matchMedia disables on mobile */
 $(function () {
-  // init controller
-  var controller = new ScrollMagic.Controller();
 
-  // build scene
-  var scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 200, offset: 375})
-    .setPin("#pin1",{pushFollowers: false} )   //,{pushFollowers: false}
-    // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
-    //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
-    .addTo(controller);
+  var mql = window.matchMedia('all and (min-width: 768px)');  //returns MediaQueryList obj
 
-  var scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 200, offset: 375})
-    .setPin("#pin2",{pushFollowers: false} )   //,{pushFollowers: false}
-    // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
-    //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
-    .addTo(controller);
+  var ctrlCreated, scene, scene2, controller;
+
+  var handleMatchMedia = function(mediaQuery) {
+    if(mql.matches) {
+      //media query matches >= 768
+      console.log('debug: matchMedia fired - matches=' + mql.matches);
+      // init controller
+      controller = new ScrollMagic.Controller();
+      ctrlCreated = true;    //used for destroying if RWD< 768
+
+      // build scene
+      scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 350, offset: 375})
+        .setPin("#pin1", {pushFollowers: false})   //,{pushFollowers: false}
+        // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+        //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+        .addTo(controller);
+
+      // build scene
+      scene2 = new ScrollMagic.Scene({triggerElement: "#skills", duration: 350, offset: 375})
+        .setPin("#pin2", {pushFollowers: false})   //,{pushFollowers: false}
+        // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+        //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+        .addTo(controller);
+
+    } else {
+      //mobile - disabled scroll pin effect
+      console.log('debug: matchMedia fired - matches=' + mql.matches);
+
+      if (ctrlCreated) {
+        // remove multiple scenes from the controller
+        scene.removePin(true);
+        scene2.removePin(true);
+        controller.removeScene([scene, scene2]);
+        // controller.destroy(true);
+      }
+    }
+  };
+  handleMatchMedia(mql); 						  //execute on load
+  mql.addListener(handleMatchMedia);  //execute when MediaQueryList matches prop changes
+
+
+
+  /* tweek duration for wider screens */
+  var mql2 = window.matchMedia('all and (min-width: 1024px)');  //returns MediaQueryList obj
+  var handleMatchMedia2 = function(mediaQuery) {
+    if(mql2.matches) {
+      //media query matches >= 1024
+      console.log('debug: matchMedia2 fired - matches=' + mql.matches);
+      scene.duration(460);
+      scene2.duration(460);
+    } else {
+      if (ctrlCreated) {
+        scene.duration(350);
+        scene2.duration(350);
+      }
+    }
+  }
+  handleMatchMedia2(mql2); 						  //execute on load
+  mql2.addListener(handleMatchMedia2);  //execute when MediaQueryList matches prop changes
+
 
 });
+
+
+
+
 
 
 
