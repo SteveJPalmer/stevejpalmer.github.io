@@ -342,21 +342,6 @@ body.about:hover {
   transition: background-color 2s ease; }
 
 /* general styles across all sections */
-section h1 {
-  color: #303538;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 700;
-  padding: 10px 0 10px 0; }
-
-section p {
-  color: #808080;
-  font-size: 18px; }
-
-section i {
-  color: #929292;
-  font-size: 14px; }
-
 /* splash page */
 #bg-splash-container {
   position: fixed;
@@ -510,6 +495,11 @@ section i {
   transition: color 0.2s ease;
   text-decoration: none; }
 
+/* scrollMagic pin - allow small margin to hide scroll bar edge */
+.scroll-scene1 {
+  margin-right: 10px; }
+
+/* skill progress bars */
 .progress {
   background: #CCC;
   border: 1px solid #C3C3C3;
@@ -758,6 +748,15 @@ section i {
 
   .ao-iii-container {
     font-size: 3.5em; } }
+/* header for ScrollMagic pin */
+@media screen and (min-width: 768px) {
+  .pin-header {
+    background-color: white;
+    width: 100%;
+    z-index: 100; }
+
+  .scroll-scene1 {
+    margin-top: 16px; } }
 /* showcase */
 /* override Bootstrap anchor style */
 .ao-monokai a, .ao-as a {

@@ -22,7 +22,7 @@
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <!-- HTML5shiv & Respond.js polyfills - HTML5 elements & media queries -->
+    <!-- polyfills - incl's HTML5 elems, media queries, matchMedia -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -64,7 +64,6 @@
 
 
   <div class="container-fluid container-fluid-index ao-fill ao-font-family">
-
 
     <div class="row">
       <header class="ao-nav nav-down">
@@ -180,118 +179,172 @@
 
         <!-- section Title -->
         <div class="col-xs-12">
-          <h1>Skills</h1>
-
+          <div id="pin1" class="pin-header">
+             <h1>Skills</h1>
+          </div>
           <!-- content panes -->
           <div class="row" id="ao-skills-subcontainer">
             <div class="col-xs-12 col-sm-6 ao-col1 text-left" >
-              <p><span class="ao-font-overweight">C</span>ommunication is one of my key strengths,
-                essential for conveying ideas at various abstraction levels to project members & stakeholders.
-              </p>
-              <p><span class="ao-font-overweight">A</span>m keen to promote Quality!
-                Was high priority when started my career at AT&T <i>(iso9001 etc..)</i> but with todays 'throw away app' mindset,
-                is too easily forgotten!
-              </p>
-              <p><span class="ao-font-overweight">I</span>ndeed, how things have changed...
-                When started as graduate trainee, office had just a single standalone internet machine!
-                - had to book 15min sessions. <i>(aka trying to book meeting rooms today!)</i>
-              </p>
-              <p><span class="ao-font-overweight">C</span>urrent focus area is Front-End Development with Angular,
-                Javascript, Css3 & RWD, within the mesmerizing supporting ecosystem..<i>
-                (can adapt quickly to new tech... my depth of experience means can always find something to relate new concepts to...
-                ie picking up Typescript went smoothly, having previously programmed Java)</i>
-              </p>
-              <p class="ao-linkedin">
-                <a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
-                  <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
-                  &nbsp;LinkedIn for detailed skillset
-                </a>
-              </p>
+              <div id="pin2">
+                <p><span class="ao-font-overweight">C</span>ommunication is one of my key strengths,
+                  essential for conveying ideas at various abstraction levels to project members & stakeholders.
+                </p>
+                <p><span class="ao-font-overweight">A</span>m keen to promote Quality!
+                  Was high priority when started my career at AT&T <i>(iso9001 etc..)</i> but with todays 'throw away
+                  app' mindset,
+                  is too easily forgotten!
+                </p>
+                <!--<p><span class="ao-font-overweight">I</span>ndeed, how things have changed...-->
+                  <!--When started as graduate trainee, office had just a single standalone internet machine!-->
+                  <!-- - had to book 15min sessions. <i>(aka trying to book meeting rooms today!)</i>-->
+                <!--</p>-->
+                <p><span class="ao-font-overweight">C</span>urrent focus area is Front-End Development with Angular,
+                  Javascript, Css3 & RWD, within the mesmerizing supporting ecosystem..<i>
+                    (can adapt quickly to new tech... my depth of experience means can always find something to relate
+                    new concepts to...
+                    ie picking up Typescript went smoothly, having previously programmed Java)</i>
+                </p>
+                <p class="ao-linkedin">
+                  <a target="_blank" href="https://uk.linkedin.com/in/stevejohnpalmer">
+                    <span class="fa fa-linkedin-square ao-font-large fa-1x" aria-hidden="true"></span>
+                    &nbsp;LinkedIn for detailed skillset
+                  </a>
+                </p></div>
             </div>
 
             <div class="col-xs-12 col-sm-6 ao-col2">
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
-                  <p class="text-left">Html5/Css3 <i>(Less & Scss)</i></p>
+              <div class="scroll-scene1">
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%;">
+                    <p class="text-left">Html5</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                  <p class="text-left">RWD <i>(Native & Bootstrap)</i></p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:85%;">
+                    <p class="text-left">Css3 <i>(Less & Scss)</i></p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                  <p class="text-left">AngularJS</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 77%;">
+                    <p class="text-left">RWD native</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%;">
-                  <p class="text-left">Angular 2</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 81%;">
+                    <p class="text-left">Twitter Bootstrap</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-              <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                   aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 91%;">
-                <p class="text-left">Javascript <i>(client & server side)</i></p>
-              </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                     aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 74%;">
-                  <p class="text-left">Node.js <i>(Express, Keystone, mean.io)</i></p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="91" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+                    <p class="text-left">Javascript <i>(native, TypeScript, ES6)</i></p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-                  <p class="text-left">TypeScript, ES6</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 86%;">
+                    <p class="text-left">AngularJS</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                  <p class="text-left">jQuery & jQueryUI</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:40%;">
+                    <p class="text-left">Angular 2</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                  <p class="text-left">MongoDB <i>(Node driver, Mongoose)</i></p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                    <p class="text-left">jQuery & jQueryUI</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                     aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 92%;">
-                  <p class="text-left">MySQL <i>(Sql, routines, node-mysql)</i></p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                    <p class="text-left">Node.js</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                     aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;">
-                  <p class="text-left">Oracle <i>(Sql, Pl/Sql, Apex)</i></p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">
+                    <p class="text-left">Test fw's</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 88%;">
-                  <p class="text-left">WebStorm</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                    <p class="text-left">Animation</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar" role="progressbar"
-                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 44%;">
-                  <p class="text-left">GIMP</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="74" aria-valuemin="0" aria-valuemax="100" style="width: 38%;">
+                    <p class="text-left">D3, Charts</p>
+                  </div>
                 </div>
-              </div>
-              <div class="progress ao-progress-bar-container">
-                <div class="progress-bar ao-progress-bar-custom" role="progressbar"
-                     aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 58%;">
-                  <p class="text-left">Logic Pro X</p>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 65%;">
+                    <p class="text-left">MongoDB</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+                    <p class="text-left">MySQL</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                    <p class="text-left">Oracle DB</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
+                    <p class="text-left">Oracle Apex</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 93%;">
+                    <p class="text-left">WebStorm</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                    <p class="text-left">Gulp</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                    <p class="text-left">Git, GitKraken, Markdown</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                    <p class="text-left">Cloud AWS</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar" role="progressbar"
+                       aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                    <p class="text-left">OSX, Linux</p>
+                  </div>
+                </div>
+                <div class="progress ao-progress-bar-container">
+                  <div class="progress-bar ao-progress-bar-custom" role="progressbar"
+                       aria-valuenow="58" aria-valuemin="0" aria-valuemax="100" style="width: 55%;">
+                    <p class="text-left">Logic Pro X</p>
+                  </div>
                 </div>
               </div>
 
@@ -408,6 +461,8 @@
 
 
   <script src="assets/js/ao.js"></script>
+  <script src="assets/js/vendor/ScrollMagic.min.js"></script>
+  <script src="assets/js/vendor/debug.addIndicators.min.js"></script>
   <script src="assets/js/vendor/jquery.waypoints.min.js"></script>
   <script src="assets/js/about.js"></script>
 

@@ -17,23 +17,23 @@ body.about:hover {
 }
 
 /* general styles across all sections */
-section h1 {
-  color: $ao-the-new-black;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 700;
-  padding: 10px 0 10px 0;
-}
-
-section p {
-   color: $ao-grey-dark;
-   font-size: 18px;
-}
-
-section i {
-  color: $ao-grey-mid;
-  font-size: 14px;
-}
+//section h1 {
+//  color: $ao-the-new-black;
+//  font-size: 36px;
+//  font-style: italic;
+//  font-weight: 700;
+//  padding: 10px 0 10px 0;
+//}
+//
+//section p {
+//   color: $ao-grey-dark;
+//   font-size: 18px;
+//}
+//
+//section i {
+//  color: $ao-grey-mid;
+//  font-size: 14px;
+//}
 
 
 
@@ -215,7 +215,12 @@ section i {
   text-decoration: none;
 }
 
+/* scrollMagic pin - allow small margin to hide scroll bar edge */
+.scroll-scene1 {
+  margin-right: 10px;
+}
 
+/* skill progress bars */
 .progress {
   background: #CCC;
   border: 1px solid #C3C3C3;
@@ -479,7 +484,6 @@ section i {
    ---------------------- */
 
 /* tablet */
-
 @media screen and (max-width: 767px) {
   body.about {
     /* jump to final img hover effect styles */
@@ -519,3 +523,15 @@ section i {
   }
 }
 
+
+/* header for ScrollMagic pin */
+@media screen and (min-width: 768px) {
+  .pin-header {
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+  }
+  .scroll-scene1 {
+    margin-top: 16px;
+  }
+}

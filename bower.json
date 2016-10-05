@@ -1,0 +1,13 @@
+{
+  "name": "audio-orange-github-pages",
+  "authors": [
+    "steve@audioorange.com"
+  ],
+  "description": "client libs - audio orange website",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "scrollmagic": "^2.0.5"
+  }
+}

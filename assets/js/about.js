@@ -37,7 +37,81 @@ function startAOSequence() {
 }
 
 
-/* Note: Waypoints invoking <audio> play() mathod, PARKED at MO 
+/* ScrollMagic controller - matchMedia disables on mobile */
+$(function () {
+
+  var mql = window.matchMedia('all and (min-width: 768px)');  //returns MediaQueryList obj
+
+  var ctrlCreated, scene, scene2, controller;
+
+  var handleMatchMedia = function(mediaQuery) {
+    if(mql.matches) {
+      //media query matches >= 768
+      console.log('debug: matchMedia fired - matches=' + mql.matches);
+      // init controller
+      controller = new ScrollMagic.Controller();
+      ctrlCreated = true;    //used for destroying if RWD< 768
+
+      // build scene
+      scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 520, offset: 365})
+        .setPin("#pin1", {pushFollowers: false})   //,{pushFollowers: false}
+        // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+        //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+        .addTo(controller);
+
+      // build scene
+      scene2 = new ScrollMagic.Scene({triggerElement: "#skills", duration: 520, offset: 365})
+        .setPin("#pin2", {pushFollowers: false})   //,{pushFollowers: false}
+        // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
+        //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
+        .addTo(controller);
+
+    } else {
+      //mobile - disabled scroll pin effect
+      console.log('debug: matchMedia fired - matches=' + mql.matches);
+
+      if (ctrlCreated) {
+        // remove multiple scenes from the controller
+        scene.removePin(true);
+        scene2.removePin(true);
+        controller.removeScene([scene, scene2]);
+        // controller.destroy(true);
+      }
+    }
+  };
+  handleMatchMedia(mql); 						  //execute on load
+  mql.addListener(handleMatchMedia);  //execute when MediaQueryList matches prop changes
+
+
+
+  /* tweek duration for wider screens */
+  var mql2 = window.matchMedia('all and (min-width: 1024px)');  //returns MediaQueryList obj
+  var handleMatchMedia2 = function(mediaQuery) {
+    if(mql2.matches) {
+      //media query matches >= 1024
+      console.log('debug: matchMedia2 fired - matches=' + mql.matches);
+      scene.duration(600);
+      scene2.duration(600);
+    } else {
+      if (ctrlCreated) {
+        scene.duration(520);
+        scene2.duration(520);
+      }
+    }
+  }
+  handleMatchMedia2(mql2); 						  //execute on load
+  mql2.addListener(handleMatchMedia2);  //execute when MediaQueryList matches prop changes
+
+
+});
+
+
+
+
+
+
+
+/* Note: Waypoints invoking <audio> play() method, PARKED at MO
          - issues with Android (& mbl) needing user event to invoke Html5 audio 
          Starting to look into Audio Libraries that have cross-browser           */
 
