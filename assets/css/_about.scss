@@ -17,23 +17,23 @@ body.about:hover {
 }
 
 /* general styles across all sections */
-section h1 {
-  color: $ao-the-new-black;
-  font-size: 36px;
-  font-style: italic;
-  font-weight: 700;
-  padding: 10px 0 10px 0;
-}
-
-section p {
-   color: $ao-grey-dark;
-   font-size: 18px;
-}
-
-section i {
-  color: $ao-grey-mid;
-  font-size: 14px;
-}
+//section h1 {
+//  color: $ao-the-new-black;
+//  font-size: 36px;
+//  font-style: italic;
+//  font-weight: 700;
+//  padding: 10px 0 10px 0;
+//}
+//
+//section p {
+//   color: $ao-grey-dark;
+//   font-size: 18px;
+//}
+//
+//section i {
+//  color: $ao-grey-mid;
+//  font-size: 14px;
+//}
 
 
 
@@ -213,6 +213,11 @@ section i {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
   text-decoration: none;
+}
+
+/* scrollMagic pin - allow small margin to hide scroll bar edge */
+.scroll-scene1 {
+  margin-right: 10px;
 }
 
 /* skill progress bars */

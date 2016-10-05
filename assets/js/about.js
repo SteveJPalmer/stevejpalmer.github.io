@@ -53,14 +53,14 @@ $(function () {
       ctrlCreated = true;    //used for destroying if RWD< 768
 
       // build scene
-      scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 350, offset: 375})
+      scene = new ScrollMagic.Scene({triggerElement: "#skills", duration: 520, offset: 365})
         .setPin("#pin1", {pushFollowers: false})   //,{pushFollowers: false}
         // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
         //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
         .addTo(controller);
 
       // build scene
-      scene2 = new ScrollMagic.Scene({triggerElement: "#skills", duration: 350, offset: 375})
+      scene2 = new ScrollMagic.Scene({triggerElement: "#skills", duration: 520, offset: 365})
         .setPin("#pin2", {pushFollowers: false})   //,{pushFollowers: false}
         // .addIndicators({name: "steve test 1 (duration: 750)",   // required additional library
         //   colorStart: "blue", colorEnd: "purple", colorTrigger: "orange"})
@@ -90,12 +90,12 @@ $(function () {
     if(mql2.matches) {
       //media query matches >= 1024
       console.log('debug: matchMedia2 fired - matches=' + mql.matches);
-      scene.duration(460);
-      scene2.duration(460);
+      scene.duration(600);
+      scene2.duration(600);
     } else {
       if (ctrlCreated) {
-        scene.duration(350);
-        scene2.duration(350);
+        scene.duration(520);
+        scene2.duration(520);
       }
     }
   }
