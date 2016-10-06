@@ -216,9 +216,10 @@ body.about:hover {
 }
 
 /* scrollMagic pin - allow small margin to hide scroll bar edge */
-.scroll-scene1 {
-  margin-right: 10px;
-}
+//.scroll-scene1 {
+//  margin-right: 10px;
+//}
+
 
 /* skill progress bars */
 .progress {
@@ -255,8 +256,6 @@ body.about:hover {
 .ao-skills-container .ao-col1, .ao-skills-container .ao-col2 {
   padding-bottom: 30px;
 }
-
-
 
 
 
@@ -525,13 +524,14 @@ body.about:hover {
 
 
 /* header for ScrollMagic pin */
-@media screen and (min-width: 768px) {
-  .pin-header {
-    background-color: white;
-    width: 100%;
-    z-index: 100;
-  }
-  .scroll-scene1 {
-    margin-top: 16px;
-  }
-}
+//@media screen and (min-width: 768px) {
+//  .pin-header {
+//    background-color: white;
+//    width: 100%;
+//    //z-index: 100;
+//  }
+//  .scroll-scene1 {
+//    margin-top: 16px;
+//    z-index: -100;
+//  }
+//}
