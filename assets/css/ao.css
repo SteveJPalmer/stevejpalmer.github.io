@@ -496,9 +496,6 @@ body.about:hover {
   text-decoration: none; }
 
 /* scrollMagic pin - allow small margin to hide scroll bar edge */
-.scroll-scene1 {
-  margin-right: 10px; }
-
 /* skill progress bars */
 .progress {
   background: #CCC;
@@ -749,14 +746,6 @@ body.about:hover {
   .ao-iii-container {
     font-size: 3.5em; } }
 /* header for ScrollMagic pin */
-@media screen and (min-width: 768px) {
-  .pin-header {
-    background-color: white;
-    width: 100%;
-    z-index: 100; }
-
-  .scroll-scene1 {
-    margin-top: 16px; } }
 /* showcase */
 /* override Bootstrap anchor style */
 .ao-monokai a, .ao-as a {
