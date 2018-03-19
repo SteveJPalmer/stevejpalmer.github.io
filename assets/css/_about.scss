@@ -199,7 +199,7 @@ body.about:hover {
 
 
 /* override Bootstrap anchor style */
-.ao-linkedin a {
+.ao-linkedin a, .ao-link a  {
   color: $ao-blue-mid;
   font-style: italic;
   -webkit-transition: color 1.5s ease;
@@ -208,7 +208,7 @@ body.about:hover {
 }
 
 /* header & footer list item hover */
-.ao-linkedin a:hover {
+.ao-linkedin a:hover, .ao-link a:hover {
   color: $ao-orange-dark;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
@@ -508,6 +508,9 @@ body.about:hover {
   }
   .ao-iii-container {
     font-size: 1.4em;
+  }
+  .ao-design-headers h1 {
+    font-size: 24px;
   }
 }
 
