@@ -68,23 +68,23 @@ blockquote p:after {
   color: $ao-orange-dark;
 }
 
-/* ifpi */
-.ao-ifpi {
+/* clinisys */
+.ao-clin {
   margin-bottom: 100px;
 }
 
-.ao-ifpi-container {
+.ao-clin-container {
   border-top: solid 2px $ao-grey-light;
 }
 
 .a-img1-container, .a-img2-container, .a-img3-container {
   margin: 0 auto;
-  max-width: 90%;
+  max-width: 80%;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
 }
 
-#a-img1, #a-img2, #a-img3a, #a-img3b {
+#a-img1, #a-img2, #a-img3a {
   /* center align */
   display: block;
   margin-left: auto;

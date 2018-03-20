@@ -139,6 +139,7 @@ color: $ao-blue-dark;
 
 .ao-nav .ao-hamburger-nav .ao-header-ul-mobile {
   padding: 0px;
+  margin-top:15px;
 }
 
 /* mobile nav list */
@@ -176,9 +177,10 @@ color: $ao-blue-dark;
 /* hamburger/mobile nav (show/hide) */
 .ao-nav .ao-hamburger-nav.ao-hide {
   //display: none;
+  visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 1.2s ease;
-  transition: opacity 1.2s ease;
+  -webkit-transition: all 1.2s ease;
+  transition: all 1.2s ease;
 }
 
 /* Footer */

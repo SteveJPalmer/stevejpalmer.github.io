@@ -53,6 +53,8 @@ $(function () {
 
 });
 
+
+// show/hide hamburger
 function toggleMobileMenu() {
     $('.ao-hamburger-nav').toggleClass('ao-hide');
 };
