@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32f74aab-e14b-41b4-9b7d-508e3b1cc7ec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/hermes-apps-final.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/hermes-wireframe.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/ao.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ao.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/ao.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ao.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/ao.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/ao.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/showcase.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,9 +33,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\stevejpalmer.github.io\assets\img" />
+    </key>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -42,7 +54,13 @@
       <workItem from="1521468146973" duration="11320000" />
       <workItem from="1521488480876" duration="1710000" />
       <workItem from="1521538915443" duration="9298000" />
-      <workItem from="1591202176117" duration="174000" />
+      <workItem from="1591202176117" duration="316000" />
+      <workItem from="1591365311592" duration="1374000" />
+      <workItem from="1591367077576" duration="599000" />
+      <workItem from="1592820051526" duration="599000" />
+      <workItem from="1592838268368" duration="127000" />
+      <workItem from="1593427209622" duration="768000" />
+      <workItem from="1593439956438" duration="6195000" />
     </task>
     <servers />
   </component>
@@ -61,19 +79,34 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="WindowStateProjectService">
+    <state x="546" y="350" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592838333431">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="546" y="350" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1592838333431" />
+    <state x="673" y="135" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1593442758724">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="673" y="135" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593442758724" />
+    <state x="486" y="82" width="923" height="850" key="EditFileWatcherDialog" timestamp="1593442803626">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="486" y="82" width="923" height="850" key="EditFileWatcherDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593442803626" />
+    <state x="578" y="190" key="FileChooserDialogImpl" timestamp="1593442465599">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="578" y="190" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1593442465599" />
+    <state x="475" y="70" key="SettingsEditor" timestamp="1593442805783">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="475" y="70" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1593442805783" />
+    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593442920106">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593442920106" />
+    <state x="688" y="327" key="scopes" timestamp="1593442428600">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="688" y="327" key="scopes/0.0.1920.1080@0.0.1920.1080" timestamp="1593442428599" />
   </component>
 </project>
