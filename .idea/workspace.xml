@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32f74aab-e14b-41b4-9b7d-508e3b1cc7ec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2020.3-websiteEdition.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/404.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-steve-palmer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media.html" beforeDir="false" afterPath="$PROJECT_DIR$/media.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/showcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/showcase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templatePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/templatePage.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,11 +35,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\stevejpalmer.github.io" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\stevejpalmer.github.io\assets" />
       <recent name="C:\stevejpalmer.github.io\assets\img" />
     </key>
   </component>
@@ -56,7 +63,8 @@
       <workItem from="1592820051526" duration="599000" />
       <workItem from="1592838268368" duration="127000" />
       <workItem from="1593427209622" duration="768000" />
-      <workItem from="1593439956438" duration="11011000" />
+      <workItem from="1593439956438" duration="11790000" />
+      <workItem from="1593515235610" duration="5535000" />
     </task>
     <servers />
   </component>
@@ -84,6 +92,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="673" y="135" key="#com.intellij.ide.macro.MacrosDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593442758724" />
+    <state x="216" y="163" width="1542" height="753" key="DiffContextDialog" timestamp="1593455026248">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="216" y="163" width="1542" height="753" key="DiffContextDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593455026248" />
     <state x="486" y="82" width="923" height="850" key="EditFileWatcherDialog" timestamp="1593442803626">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -96,14 +108,18 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="475" y="70" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1593442805783" />
-    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593442920106">
+    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593455026248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593442920106" />
-    <state x="629" y="206" width="716" height="738" key="find.popup" timestamp="1593454169772">
+    <state x="114" y="111" width="1668" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1593455026248" />
+    <state x="445" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593523511141">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="629" y="206" width="716" height="738" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1593454169772" />
+    <state x="445" y="135" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1593523511141" />
+    <state x="629" y="206" width="716" height="738" key="find.popup" timestamp="1593525158226">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="629" y="206" width="716" height="738" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1593525158226" />
     <state x="688" y="327" key="scopes" timestamp="1593442428600">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
