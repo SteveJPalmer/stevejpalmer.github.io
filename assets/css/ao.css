@@ -1168,6 +1168,10 @@ blockquote p:after {
 
 /* custom RWD */
 @media screen and (max-width: 767px) {
+  .ao-contacts {
+    left: 10%;
+  }
+
   .ao-contacts p {
     font-size: 1.5em;
   }
@@ -1177,6 +1181,10 @@ blockquote p:after {
   }
 }
 @media screen and (max-width: 550px) {
+  .ao-contacts {
+    left: 5%;
+  }
+
   .ao-contacts p {
     font-size: 1.2em;
   }
