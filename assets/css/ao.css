@@ -1193,6 +1193,19 @@ blockquote p:after {
     font-size: 0.8em;
   }
 }
+@media screen and (max-width: 360px) {
+  .ao-contacts {
+    left: none;
+  }
+
+  .ao-contacts p {
+    font-size: 1.1em;
+  }
+
+  .ao-contacts span {
+    font-size: 0.8em;
+  }
+}
 /* media pages */
 /* media */
 body.media {
