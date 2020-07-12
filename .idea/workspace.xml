@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="32f74aab-e14b-41b4-9b7d-508e3b1cc7ec" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/_contact.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2020.3-websiteEdition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2020.3-websiteEdition.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,16 +30,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\stevejpalmer.github.io\assets\img" />
+      <recent name="C:\stevejpalmer.github.io\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\stevejpalmer.github.io" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\stevejpalmer.github.io\assets" />
-      <recent name="C:\stevejpalmer.github.io\assets\img" />
     </key>
   </component>
   <component name="TaskManager">
@@ -60,7 +60,8 @@
       <workItem from="1593427209622" duration="768000" />
       <workItem from="1593439956438" duration="11790000" />
       <workItem from="1593515235610" duration="5535000" />
-      <workItem from="1593527211185" duration="1843000" />
+      <workItem from="1593527211185" duration="2201000" />
+      <workItem from="1594575183361" duration="177000" />
     </task>
     <servers />
   </component>
