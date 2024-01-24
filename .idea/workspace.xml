@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="32f74aab-e14b-41b4-9b7d-508e3b1cc7ec" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2023 - FullStack - Public.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2020.3-websiteEdition.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/StevePalmer-CV-2020.3-websiteEdition.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-steve-palmer.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact-steve-palmer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,28 +18,31 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <annotation-enable>false</annotation-enable>
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
-  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
   <component name="ProjectId" id="1cok7mGDniBJLk15pX8jkAZ7x5p" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="NewWatcherDialog.advanced.open" value="true" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/zzz-Repos/stevejpalmer.github.io/assets/img",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\zzz-Repos\stevejpalmer.github.io\assets\img" />
       <recent name="C:\stevejpalmer.github.io\assets\img" />
       <recent name="C:\stevejpalmer.github.io\assets" />
     </key>
@@ -42,6 +50,7 @@
       <recent name="C:\stevejpalmer.github.io" />
     </key>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="32f74aab-e14b-41b4-9b7d-508e3b1cc7ec" name="Default" comment="" />
@@ -62,11 +71,12 @@
       <workItem from="1593515235610" duration="5535000" />
       <workItem from="1593527211185" duration="2201000" />
       <workItem from="1594575183361" duration="177000" />
+      <workItem from="1706122081355" duration="5475000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -78,7 +88,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="546" y="350" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1592838333431">
